@@ -1,53 +1,48 @@
-/* styles.css */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-    text-align: center;
+* {
+    padding: 0;
+    margin: 0;
 }
 
-.container {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+nav {
+margin: 25px;
+background: #f9f9f9;
+padding: 16px;
 }
 
-h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
+.menuItems {
+list-style: none;
+display: flex;
+}
+  
+li {
+margin: 50px;
 }
 
-img {
-    max-width: 100%;
-    margin-bottom: 20px;
+a {
+text-decoration: none;
+color: #8f8f8f;
+font-size: 14px;
+font-weight: 400;
+transition: all 0.5s ease-in-out;
+position: relative;
 }
-
-.rating {
-    margin-bottom: 20px;
+  
+&::before {
+content: attr(data-item);
+transition: 0.5s;
+color: #8254ff;
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+width: 0;
+overflow: hidden;
 }
-
-label {
-    font-weight: bold;
+  
+&:hover {
+&::before {
+width: 100%;
+transition: all 0.5s ease-in-out;
 }
-
-input[type="number"] {
-    width: 60px;
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-button {
-    background-color: #007bff;
-    color: #ffffff;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #0056b3;
 }
