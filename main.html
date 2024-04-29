@@ -1,35 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ARTificial</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-
-<section>
-    <nav class= "nav_container">
-        <a href="#" class = "nav__logo">Logo</a>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
+      integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <section>
+      <nav class="nav_container">
+        <a href="#" class="nav__logo">Logo</a>
 
         <div class="nav__menu">
-            <ul class="nav__list">
-            <li href = "#" class = "nav_item">
-            <a href="#" class="nav__link">Products</a>
-            </li>    
-            <li href = "#" class = "nav_item">
-                <a href="#" class="nav__link">About Us</a>
-            </li>  
-            <li href = "#" class = "nav_item">
-                <a href="#" class="nav__link">Contact Us</a>
-            </li>  
-            <li href = "#" class = "nav_item">
-                <a href="#" class="nav__link">한국어</a>
-            </li>  
-            </ul>
+          <ul class="nav__list">
+            <li href="#" class="nav__item">
+              <a href="#" class="nav__link">Products</a>
+            </li>
+            <li href="#" class="nav__item">
+              <a href="#" class="nav__link">About Us</a>
+            </li>
+            <li href="#" class="nav__item">
+              <a href="#" class="nav__link">Contact Us</a>
+            </li>
+            <li href="#" class="nav__item">
+              <a href="#" class="nav__link">한국어</a>
+            </li>
+          </ul>
+
+          <div class="nav__close" id="nav-close">
+            <i class="ri-close-line"></i>
+          </div>
+
+          <div class="nav__actions">
+            <i class="ri-user-line nav__login" id="login-btn"></i>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-menu-line"></i>
+            </div>
+          </div>
         </div>
-            
-    </nav>
-</section>
-<body>
-</body>
+      </nav>
+    </section>
+
+    <main class="main">
+      <img src="images/grayBackground.jpg" alt="" class="main__bg" />
+    </main>
+  </body>
 </html>
