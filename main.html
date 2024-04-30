@@ -4,6 +4,7 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
       <link rel="stylesheet" href="styles.css">
 
       <title>ARTificial - Art Redefined</title>
@@ -19,19 +20,17 @@
                   <li class="nav__item">
                      <a href="#" class="nav__link">Home</a>
                   </li>
-                  
-                  <li class="nav__item">
-                     <a href="#" class="nav__link">Products</a>
-                  </li>
-                  <!-- <li class="dropdown">
-                     <a href="javascript:void(0)" class="dropbtn">Products ▾</a> -->
-                     <!-- <div class="dropdown-content">
-                        <li><a href="#">JEREMY</a></li>
-                        <li><a href="#">SJ</a></li>
-                        <li><a href="#">ANDY</a></li>
-                     </div> -->
-                  </li>
-
+                  <div class="dropdown">
+                     <button class="dropbtn">
+                        Products
+                        <i class="fa fa-caret-down"></i>
+                     </button>
+                     <div class="dropdown-content">
+                        <a href="#">JEREMY</a>
+                        <a href="#">SJ</a>
+                        <a href="#">ANDY</a>
+                     </div>
+                  </div>
                   <li class="nav__item">
                      <a href="#" class="nav__link">About Us</a>
                   </li>
@@ -62,7 +61,6 @@
             </div>
          </nav>
       </header>
-
       <!--  LOGIN  -->
       <div class="login" id="login">
          <form action="" class="login__form">
@@ -95,12 +93,51 @@
 
          <i class="ri-close-line login__close" id="login-close"></i>
       </div>
+   <div class="carousel-container">
+      <div class="carousel">
+         <div class="carousel_inner">
+            <div class="carousel_item carousel_item__active">
+               <img src="./images/expic1.jpg" alt="" class="carousel_img">
+               <div class="carousel_caption">
+                  <h1 class="carousel_title">Title of the art</h1>
+                  <p class="carousel_description">This is a description for the art provided</p>
+               </div>
+            </div>
+            <div class="carousel_item">
+               <img src="./images/expic2.jpg" alt="" class="carousel_img">
+               <div class="carousel_caption">
+                  <h1 class="carousel_title">Title of the art</h1>
+                  <p class="carousel_description">This is a description for the art provided</p>
+               </div>
+            </div>
+            <div class="carousel_item">
+               <img src="./images/expic3.jpg" alt="" class="carousel_img">
+               <div class="carousel_caption">
+                  <h1 class="carousel_title">Title of the art</h1>
+                  <p class="carousel_description">This is a description for the art provided</p>
+               </div>
+            </div>
+         </div>
+   
+         <div class="carousel_indicator">
+            <button class="carousel_dot carousel_dot__active"></button>
+            <button class="carousel_dot"></button>
+            <button class="carousel_dot"></button>
+         </div>
+   
+         <div class="carousel_control">
+            <button class="carousel_button carousel_button__prev">
+               <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="carousel_button carousel_button__next">
+               <i class="fas fa-chevron-right"></i>
+            </button>
+         </div>
+      </div>
+   </div>
 
-      <!-- MAIN -->
-      <main class="main">
-         <img src="images/grayBackground.jpg" alt="image" class="main__bg">
-      </main>
-      
+   <!-- Text (Our Vision) -->
+   
       <!-- JAVASCRIPT -->
       <script src="script.js"></script>
    </body>
