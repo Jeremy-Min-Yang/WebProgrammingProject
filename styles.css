@@ -708,11 +708,29 @@ img {
   }
 }
 /* CUSTOMER TESTIMONIALS */
+.testimonials_container{
+  text-align: center;
+}
+
+.testimonials_header{
+padding-top: 30px;
+color: #444;
+font-size: 20px;
+margin: auto;
+line-height: 50px;
+}
+
 .slide-container{
+  text-align: center;
   max-width: 1120px;
   width: 100%;
   padding: 40px 0;
 }
+
+.testimonials_header{
+  margin-bottom: 40px;
+}
+
 .slide-content{
   margin: 0 40px;
   overflow: hidden;
@@ -829,6 +847,90 @@ img {
   .swiper-navBtn{
     display: none;
   }
+}
+
+/* Product Page */
+.shop{
+  margin-top: 80px;
+  padding: 100px, 8%;
+  list-style: none;
+  text-align: center;
+}
+
+.product_header{
+  padding-top: 30px;
+  color: #444;
+  font-size: 20px;
+  margin: auto;
+  line-height: 50px;
+}
+
+.shop_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, auto));
+  align-items: center;
+  gap: 2rem;
+  text-align: center;
+  cursor: pointer;
+  padding-top: 2rem;
+}
+
+.shop_box{
+  padding: 0px 20px 10px 20px;
+  background: transparent;
+  box-shadow: 5px 30px 50px rgba(55, 55, 55, .1);
+  border-radius: 10px;
+  position: relative;
+  transition: all .35s ease;
+}
+
+.shop_box img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-bottom: 12px;
+}
+
+.shop_box h4{
+  font-size: 15px;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+.shop_box h5{
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.shop_box:hover{
+  transform: translateY(-5px)
+}
+
+.product_about{
+  margin-top: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.about_content{
+  text-align: center;
+}
+
+.about_content h2{
+  font-size: var(--h2-font-size);
+  margin-bottom: 24px;
+}
+
+.about_content p{
+  max-width: 600px;
+  font-size: 16px;
+  font-weight: var(--font-semi-bold);
+  line-height: 30px;
+  margin-bottom: 30px;
 }
 
 /* For large devices */

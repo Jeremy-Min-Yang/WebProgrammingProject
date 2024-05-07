@@ -147,3 +147,20 @@ var swiper = new Swiper(".slide-content", {
        },
    },
  });
+
+//  ===== GOOGLE API (ABOUT US) =====
+function initMap() {
+   let mapOptions = {
+   center: {lat: 37.566236, lng: 126.943248},
+   zoom: 14
+}
+
+   let map = new google.maps.Map(document.getElementById('map'), mapOptions);
+
+   let markerOptions = {
+   position: new google.maps.LatLng(37.566236, 126.943248),
+   map: map
+}
+
+   let marker = new google.maps.Marker(markerOptions)
+} 
