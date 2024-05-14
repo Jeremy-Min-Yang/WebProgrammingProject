@@ -148,6 +148,55 @@ var swiper = new Swiper(".slide-content", {
    },
  });
 
+//  Customer testimonials instagram: kim chaewon
+var kimchaewon_button = document.getElementById("kimchaewon-ig");
+
+kimchaewon_button.addEventListener("click", function() {
+   console.log("Kim Chaewon");
+   window.location.href= "https://www.instagram.com/_chaechae_1/?hl=en"
+});
+
+//  Customer testimonials instagram: neymar jr
+var neymar_button = document.getElementById("neymar-ig");
+
+neymar_button.addEventListener("click", function() {
+   console.log("Neymar");
+   window.location.href= "https://www.instagram.com/neymarjr/?hl=en"
+});
+
+//  Customer testimonials instagram: lebron
+var lebron_button = document.getElementById("lebron-ig");
+
+lebron_button.addEventListener("click", function() {
+   console.log("lebron");
+   window.location.href= "https://www.instagram.com/kingjames/?hl=en"
+});
+
+//  Customer testimonials instagram: messi
+var messi_button = document.getElementById("messi-ig");
+
+messi_button.addEventListener("click", function() {
+   console.log("messi");
+   window.location.href= "https://www.instagram.com/leomessi/?hl=en"
+});
+
+//  Customer testimonials instagram: einstein
+var einstein_button = document.getElementById("einstein-ig");
+
+einstein_button.addEventListener("click", function() {
+   console.log("einstein");
+   window.location.href= "https://www.instagram.com/alberteinstein/?hl=en"
+});
+
+//  Customer testimonials instagram: drake
+var drake_button = document.getElementById("drake-ig");
+
+drake_button.addEventListener("click", function() {
+   console.log("drake");
+   window.location.href= "https://www.instagram.com/champagnepapi/?hl=en"
+});
+
+
 //  ===== GOOGLE API (ABOUT US) =====
 function initMap() {
    let mapOptions = {
