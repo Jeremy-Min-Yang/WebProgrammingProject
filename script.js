@@ -213,3 +213,25 @@ function initMap() {
 
    let marker = new google.maps.Marker(markerOptions)
 } 
+
+// ===== IMAGE ZOOM =====
+var options1 = {
+	zoomWidth: 500,
+	zoomHeight: 500,
+	offset: {vertical: 0, horizontal: 10},
+	scale: .6
+};
+new ImageZoom(document.querySelector(".product-img"), options1);
+
+// ===== SHOPPING CART ICON =====
+let cartIcon = document.querySelector("#cart-icon");
+let cart = document.querySelector(".cart-slide");
+let closeCart = document.querySelector("#close-cart");
+
+cartIcon.onclick = () => {
+   cart.classList.add("active");
+};
+
+closeCart.onclick = () => {
+   cart.classList.remove("active");
+};
