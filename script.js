@@ -1,29 +1,46 @@
 const navMenu = document.getElementById('nav-menu'),
-    navToggle = document.getElementById('nav-toggle'),
-    navClose = document.getElementById('nav-close')
+   navToggle = document.getElementById('nav-toggle'),
+   navClose = document.getElementById('nav-close')
 
 // ===== MENU SHOW =====
 navToggle.addEventListener('click', () => {
-    navMenu.classList.add('show-menu')
+   navMenu.classList.add('show-menu')
 })
 
 // ===== MENU HIDDEN =====
 navClose.addEventListener('click', () => {
-    navMenu.classList.remove('show-menu')
+   navMenu.classList.remove('show-menu')
 })
 
 // ====== LOG IN ======
 const login = document.getElementById('login')
-      loginBtn = document.getElementById('login-btn')
-      loginClose = document.getElementById('login-close')
+loginBtn = document.getElementById('login-btn')
+loginClose = document.getElementById('login-close')
 
 loginBtn.addEventListener('click', () => {
-    login.classList.add('show-login')
+   login.classList.add('show-login')
 })
 
 loginClose.addEventListener('click', () => {
-    login.classList.remove('show-login')
+   login.classList.remove('show-login')
 })
+
+// ====== CART ICON =====
+const cartIcon = document.getElementById('cart-icon');
+const cartSlide = document.querySelector('.cart-slide');
+const closeCart = document.getElementById('close-cart');
+
+cartIcon.addEventListener('click', function () {
+   cartSlide.classList.add('show');
+});
+closeCart.addEventListener('click', function () {
+   cartSlide.classList.remove('show');
+});
+
+// cartIcon.onclick = () => {
+//    console.log("Cart icon clicked");
+//    cart.classList.add("active");
+// };
 
 // ====== IMAGE SLIDER ======
 let onSlide = false;
@@ -126,112 +143,112 @@ var swiper = new Swiper(".slide-content", {
    fade: 'true',
    grabCursor: 'true',
    pagination: {
-     el: ".swiper-pagination",
-     clickable: true,
-     dynamicBullets: true,
+      el: ".swiper-pagination",
+      clickable: true,
+      dynamicBullets: true,
    },
    navigation: {
-     nextEl: ".swiper-button-next",
-     prevEl: ".swiper-button-prev",
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
    },
 
-   breakpoints:{
-       0: {
-           slidesPerView: 1,
-       },
-       520: {
-           slidesPerView: 2,
-       },
-       950: {
-           slidesPerView: 3,
-       },
+   breakpoints: {
+      0: {
+         slidesPerView: 1,
+      },
+      520: {
+         slidesPerView: 2,
+      },
+      950: {
+         slidesPerView: 3,
+      },
    },
- });
+});
 
 //  Customer testimonials instagram: kim chaewon
 var kimchaewon_button = document.getElementById("kimchaewon-ig");
 
-kimchaewon_button.addEventListener("click", function() {
+kimchaewon_button.addEventListener("click", function () {
    console.log("Kim Chaewon");
-   window.location.href= "https://www.instagram.com/_chaechae_1/?hl=en"
+   window.location.href = "https://www.instagram.com/_chaechae_1/?hl=en"
 });
 
 //  Customer testimonials instagram: neymar jr
 var neymar_button = document.getElementById("neymar-ig");
 
-neymar_button.addEventListener("click", function() {
+neymar_button.addEventListener("click", function () {
    console.log("Neymar");
-   window.location.href= "https://www.instagram.com/neymarjr/?hl=en"
+   window.location.href = "https://www.instagram.com/neymarjr/?hl=en"
 });
 
 //  Customer testimonials instagram: lebron
 var lebron_button = document.getElementById("lebron-ig");
 
-lebron_button.addEventListener("click", function() {
+lebron_button.addEventListener("click", function () {
    console.log("lebron");
-   window.location.href= "https://www.instagram.com/kingjames/?hl=en"
+   window.location.href = "https://www.instagram.com/kingjames/?hl=en"
 });
 
 //  Customer testimonials instagram: messi
 var messi_button = document.getElementById("messi-ig");
 
-messi_button.addEventListener("click", function() {
+messi_button.addEventListener("click", function () {
    console.log("messi");
-   window.location.href= "https://www.instagram.com/leomessi/?hl=en"
+   window.location.href = "https://www.instagram.com/leomessi/?hl=en"
 });
 
 //  Customer testimonials instagram: einstein
 var einstein_button = document.getElementById("einstein-ig");
 
-einstein_button.addEventListener("click", function() {
+einstein_button.addEventListener("click", function () {
    console.log("einstein");
-   window.location.href= "https://www.instagram.com/alberteinstein/?hl=en"
+   window.location.href = "https://www.instagram.com/alberteinstein/?hl=en"
 });
 
 //  Customer testimonials instagram: drake
 var drake_button = document.getElementById("drake-ig");
 
-drake_button.addEventListener("click", function() {
+drake_button.addEventListener("click", function () {
    console.log("drake");
-   window.location.href= "https://www.instagram.com/champagnepapi/?hl=en"
+   window.location.href = "https://www.instagram.com/champagnepapi/?hl=en"
 });
 
 
 //  ===== GOOGLE API (ABOUT US) =====
 function initMap() {
    let mapOptions = {
-   center: {lat: 37.566236, lng: 126.943248},
-   zoom: 14
-}
+      center: { lat: 37.566236, lng: 126.943248 },
+      zoom: 14
+   }
 
    let map = new google.maps.Map(document.getElementById('map'), mapOptions);
 
    let markerOptions = {
-   position: new google.maps.LatLng(37.566236, 126.943248),
-   map: map
-}
+      position: new google.maps.LatLng(37.566236, 126.943248),
+      map: map
+   }
 
    let marker = new google.maps.Marker(markerOptions)
-} 
+}
 
 // ===== IMAGE ZOOM =====
 var options1 = {
-	zoomWidth: 500,
-	zoomHeight: 500,
-	offset: {vertical: 0, horizontal: 10},
-	scale: .6
+   zoomWidth: 500,
+   zoomHeight: 500,
+   offset: { vertical: 0, horizontal: 10 },
+   scale: .6
 };
 new ImageZoom(document.querySelector(".product-img"), options1);
 
-// ===== SHOPPING CART ICON =====
-let cartIcon = document.querySelector("#cart-icon");
-let cart = document.querySelector(".cart-slide");
-let closeCart = document.querySelector("#close-cart");
+// // ===== SHOPPING CART ICON =====
+// let cartIcon = document.querySelector("#cart-icon");
+// let cart = document.querySelector(".cart-slide");
+// let closeCart = document.querySelector("#close-cart");
 
-cartIcon.onclick = () => {
-   cart.classList.add("active");
-};
+// cartIcon.onclick = () => {
+//    cart.classList.add("active");
+// };
 
-closeCart.onclick = () => {
-   cart.classList.remove("active");
-};
+// closeCart.onclick = () => {
+//    cart.classList.remove("active")  ;
+// };
