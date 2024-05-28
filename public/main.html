@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>ARTificial - Art Redefined</title>
+    <link rel="icon" type="image/png" href="/images/ARTificial Logo.png">
+  </head>
+  <body>
+
+    <!-- HEADER -->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="main.html" class="nav__logo"><img class="logo" src="images/ARTificial Logo No BG.png" alt=""></a>
+        <a href="main.html" class="nav__logo">ARTificial</a>
+
+        <!-- Navigation menu -->
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+
+            <!-- Home -->
+            <li class="nav__item">
+              <a href="main.html" class="nav__link">Home</a>
+            </li>
+
+            <!-- Products -->
+            <div class="dropdown">
+              <button class="dropbtn">
+                Products
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="./jeremyProducts/jyProducts.html">JEREMY</a>
+                <a href="sjProducts.html">SJ</a>
+                <a href="aaProducts.html">ANDY</a>
+              </div>
+            </div>
+
+            <!-- About us -->
+            <li class="nav__item">
+              <a href="aboutUs.html" class="nav__link">About Us</a>
+            </li>
+            
+            <!-- Contact us -->
+            <li class="nav__item">
+              <a href="contactUs.html" class="nav__link">Contact Us</a>
+            </li>
+
+            <!-- Korean Website -->
+            <li class="nav__item">
+              <a href="mainKorean.html" class="nav__link">한국어</a>
+            </li>
+            <li class="nav__item">
+              <a href="shoppingcart.html" class="nav__link"><i class="fa fa-shopping-cart"></i>
+            </a>
+            </li>
+          </ul>
+
+          <!-- Close button -->
+          <div class="nav__close" id="nav-close">
+            <i class="ri-close-line"></i>
+          </div>
+        </div>
+
+        <div class="nav__actions">
+          <!-- Login button -->
+          <i class="ri-user-line nav__login" id="login-btn"></i>
+
+          <!-- Toggle button -->
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-line"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--  LOGIN  -->
+    <div class="login" id="login">
+      <form action="" class="login__form">
+        <h2 class="login__title">Log In</h2>
+
+        <div class="login__group">
+          <div>
+            <label for="email" class="login__label">Username</label>
+            <input
+              type="email"
+              placeholder="Username or Email"
+              id="email"
+              class="login__input"
+            />
+          </div>
+
+          <div>
+            <label for="password" class="login__label">Password</label>
+            <input
+              type="password"
+              placeholder="Enter your password"
+              id="password"
+              class="login__input"
+            />
+          </div>
+        </div>
+
+        <div>
+          <p class="login__signup">
+            Don't have an account? <a href="#">Sign up</a>
+          </p>
+
+          <a href="#" class="login__forgot"> Forgot your password? </a>
+
+          <button type="submit" class="login__button">Log In</button>
+        </div>
+      </form>
+
+      <i class="ri-close-line login__close" id="login-close"></i>
+    </div>
+    <!-- IMAGE CAROUSEL -->
+    <div class="carousel-container">
+      <div class="carousel">
+        <div class="carousel_inner">
+          <div class="carousel_item carousel_item__active">
+            <img src="./images/jyPics/jyproduct6.jpg" alt="" class="carousel_img" />
+            <div class="carousel_caption">
+              <h1 class="carousel_title">Poenitentiae Cruciatus</h1>
+              <p class="carousel_description">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus iusto soluta illum dignissimos. Laudantium, optio sit nam perferendis dolorem non.
+              </p>
+              <button class="carousel_btn"><a href="./jeremyProducts/jyIndProd6.html">View</a></button>
+            </div>
+          </div>
+          <div class="carousel_item">
+            <img src="./images/jyPics/jyproduct7.jpg" alt="" class="carousel_img" />
+            <div class="carousel_caption">
+              <h1 class="carousel_title">Title of the art</h1>
+              <p class="carousel_description">
+                This is a description for the art provided
+              </p>
+              <button class="carousel_btn"><a href="">View</a></button>
+            </div>
+          </div>
+          <div class="carousel_item">
+            <img src="./images/jyPics/jyproduct8.jpg" alt="" class="carousel_img" />
+            <div class="carousel_caption">
+              <h1 class="carousel_title">Title of the art</h1>
+              <p class="carousel_description">
+                This is a description for the art provided
+              </p>
+              <button class="carousel_btn"><a href="">View</a></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel_indicator">
+          <button class="carousel_dot carousel_dot__active"></button>
+          <button class="carousel_dot"></button>
+          <button class="carousel_dot"></button>
+        </div>
+
+        <div class="carousel_control">
+          <button class="carousel_button carousel_button__prev">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <button class="carousel_button carousel_button__next">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Text (Our Vision) -->
+    <div class="vision-container">
+      <h1 class="vision-text">Our Vision</h1>
+      <p class="vision-description">
+        Art, by definition, visually represents an individual's thoughts and
+        emotions. We at ARTificial believe artificial intelligence is more than
+        just a tool; they are our collaborators, transcending the boundaries of
+        our imagination. Artificial intelligence has the ability to bring forth
+        a boundless perspective. The creation of a new, fresh aesthetic that is
+        unfathomably harmonious yet unconventional, a visual symphony. AI is a
+        catalyst of our creativity. Brushes dipped in 1s and 0s, guided by its
+        neural pathways. Together, we have redefined art, going beyond what is
+        known to be tried and tested.
+      </p>
+    </div>
+
+    <!-- TEXT (Our Team) -->
+    <div class="meetus-container">
+      <div class="meetus-header">
+        <h1>TEAM ONE</h1>
+      </div>
+      <div class="sub-container">
+        <div class="teams">
+          <img src="images/devPics/aa.jpg" alt="" />
+          <div class="name">Andy Ahn</div>
+          <div class="desig">Co-Founder/Developer</div>
+          <div class="about">Yonsei 2024</div>
+          <div class="social-links">
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-github"></i></a>
+          </div>
+        </div>
+        <div class="teams">
+          <img src="images/devPics/jy.jpg" alt="" />
+          <div class="name">Jeremy Yang</div>
+          <div class="desig">Co-Founder/Developer</div>
+          <div class="about">Yonsei 2024</div>
+          <div class="social-links">
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-github"></i></a>
+          </div>
+        </div>
+        <div class="teams">
+          <img src="images/devPics/sj.jpg" alt="" />
+          <div class="name">Sung Jun Lim</div>
+          <div class="desig">Co-Founder/Developer</div>
+          <div class="about">Yonsei 2024</div>
+          <div class="social-links">
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- CUSTOMER TESTIMONIALS -->
+    <div class="testimonials_container">
+    <div class="testimonials-header">
+      <h1>CUSTOMER TESTIMONIALS</h1>
+    </div>    
+    <div class="slide-container swiper">    
+      <div class="slide-content">
+        <div class="card-wrapper swiper-wrapper">
+          <div class="card swiper-slide">
+            <div class="image-content">
+              <span class="overlay"></span>
+
+              <div class="card-image">
+                <img
+                  src="images/customerPics/chaewon.jpg"
+                  alt=""
+                  class="card-img"
+                />
+              </div>
+            </div>
+
+            <div class="card-content">
+              <h2 class="CTname">KIM CHAEWON</h2>
+              <p class="description">
+               "Discovering ARTificial has been a game-changer for me as an artist. The diverse collection fuels my inspiration and helps me explore new styles effortlessly."
+              </p>
+
+              <button class="button" id="kimchaewon-ig">View More</button>
+
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="image-content">
+              <span class="overlay"></span>
+
+              <div class="card-image">
+                <img
+                  src="images/customerPics/neymar.jpg"
+                  alt=""
+                  class="card-img"
+                />
+              </div>
+            </div>
+
+            <div class="card-content">
+              <h2 class="CTname">NEYMAR JR.</h2>
+              <p class="description">
+               "ARTificial is pure magic on and off the pitch! Each piece adds its own stylish dribble to my space, just like weaving through defenders. Thanks for the artistic wizardry, ARTificial!"
+
+              </p>
+
+              <button class="button" id="neymar-ig">View More</button>
+
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="image-content">
+              <span class="overlay"></span>
+
+              <div class="card-image">
+                <img
+                  src="images/customerPics/lebron.png.jpeg"
+                  alt=""
+                  class="card-img"
+                />
+              </div>
+            </div>
+
+            <div class="card-content">
+              <h2 class="CTname">LEBRON JAMES</h2>
+              <p class="description">
+               "ARTificial is the perfect slam dunk for my walls! Just like on the court, every piece hits with style and precision. It's my go-to for adding that extra flair to my space. Appreciate y'all, ARTificial!"
+              </p>
+
+              <button class="button" id="lebron-ig">View More</button>
+
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="image-content">
+              <span class="overlay"></span>
+
+              <div class="card-image">
+                <img
+                  src="images/customerPics/messi.png"
+                  alt=""
+                  class="card-img"
+                />
+              </div>
+            </div>
+
+            <div class="card-content">
+              <h2 class="CTname">MESSI</h2>
+              <p class="description">
+               "ARTificial is like a perfectly executed dribble through defenders – smooth, effortless, and full of surprises! Each piece adds its own flair to my space, just like scoring that winning goal."
+              </p>
+
+              <button class="button" id="messi-ig">View More</button>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="image-content">
+              <span class="overlay"></span>
+
+              <div class="card-image">
+                <img
+                  src="images/customerPics/einstein.jpg"
+                  alt=""
+                  class="card-img"
+                />
+              </div>
+            </div>
+
+            <div class="card-content">
+              <h2 class="CTname">EINSTEIN</h2>
+              <p class="description">
+                "ARTificial ignites my imagination like a burst of cosmic energy! Each piece is a vibrant equation, adding layers of color and meaning to my world. Thanks for the artistic enlightenment, ARTificial!"
+              </p>
+
+              <button class="button" id="einstein-ig">View More</button>
+
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="image-content">
+              <span class="overlay"></span>
+
+              <div class="card-image">
+                <img
+                  src="images/customerPics/drake.jpeg"
+                  alt=""
+                  class="card-img"
+                />
+              </div>
+            </div>
+
+            <div class="card-content">
+              <h2 class="CTname">DRAKE</h2>
+              <p class="description">
+               "ARTificial brings the vibe just like laying down a fresh beat. Each piece adds its own unique flavor to my space, like creating a new track. Thanks for the creative energy, ARTificial!"
+              </p>
+
+              <button class="button" id="drake-ig">View More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-button-next swiper-navBtn"></div>
+      <div class="swiper-button-prev swiper-navBtn"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+
+    <!-- FOOTER -->
+    <div class="footer-basic">
+      <footer>
+        <div class="footer-social">
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-envelope"></i></a>
+          <a href="#"><i class="fa fa-github"></i></a>
+        </div>
+        <ul class="footer-list">
+          <li class="list-item"><a href="main.html">Home</a></li>
+          <li class="list-item"><a href="aboutUs.html">About Us</a></li>
+          <li class="list-item"><a href="contactUs.html">Contact Us</a></li>
+          <li class="list-item"><a href="privacy.html">Privacy Policy</a></li>
+          <li class="list-item"><a href="t&c.html">Terms & Conditions</a></li>
+        </ul>
+        <p class="copyright">ARTificial [Created by 안지원, 임성준, 양정민] © 2024</p>
+      </footer>
+    </div>
+    <!-- JAVASCRIPT -->
+    <script src="swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+   var swiper = new Swiper(".slide-content", {
+      slidesPerView: 3,
+      spaceBetween: 25,
+      loop: true,
+      centerSlide: 'true',
+      fade: 'true',
+      grabCursor: 'true',
+      pagination: {
+         el: ".swiper-pagination",
+         clickable: true,
+         dynamicBullets: true,
+      },
+      navigation: {
+         nextEl: ".swiper-button-next",
+         prevEl: ".swiper-button-prev",
+      },
+
+      breakpoints: {
+         0: {
+            slidesPerView: 1,
+         },
+         520: {
+            slidesPerView: 2,
+         },
+         950: {
+            slidesPerView: 3,
+         },
+      },
+   });
+
+   //  Customer testimonials instagram: kim chaewon
+   var kimchaewon_button = document.getElementById("kimchaewon-ig");
+
+   kimchaewon_button.addEventListener("click", function () {
+      console.log("Kim Chaewon");
+      window.location.href = "https://www.instagram.com/_chaechae_1/?hl=en"
+   });
+
+   //  Customer testimonials instagram: neymar jr
+   var neymar_button = document.getElementById("neymar-ig");
+
+   neymar_button.addEventListener("click", function () {
+      console.log("Neymar");
+      window.location.href = "https://www.instagram.com/neymarjr/?hl=en"
+   });
+
+   //  Customer testimonials instagram: lebron
+   var lebron_button = document.getElementById("lebron-ig");
+
+   lebron_button.addEventListener("click", function () {
+      console.log("lebron");
+      window.location.href = "https://www.instagram.com/kingjames/?hl=en"
+   });
+
+   //  Customer testimonials instagram: messi
+   var messi_button = document.getElementById("messi-ig");
+
+   messi_button.addEventListener("click", function () {
+      console.log("messi");
+      window.location.href = "https://www.instagram.com/leomessi/?hl=en"
+   });
+
+   //  Customer testimonials instagram: einstein
+   var einstein_button = document.getElementById("einstein-ig");
+
+   einstein_button.addEventListener("click", function () {
+      console.log("einstein");
+      window.location.href = "https://www.instagram.com/alberteinstein/?hl=en"
+   });
+
+   //  Customer testimonials instagram: drake
+   var drake_button = document.getElementById("drake-ig");
+
+   drake_button.addEventListener("click", function () {
+      console.log("drake");
+      window.location.href = "https://www.instagram.com/champagnepapi/?hl=en"
+   });
+});
+
+function getItemActiveIndex() {
+   const itemsArray = Array.from(document.querySelectorAll(".carousel_item"));
+   const itemActive = document.querySelector(".carousel_item__active");
+   const itemActiveIndex = itemsArray.indexOf(itemActive);
+   return itemActiveIndex;
+}
+
+function slideIndicator(toIndex) {
+   const dots = document.querySelectorAll(".carousel_dot");
+   const dotActive = document.querySelector(".carousel_dot__active");
+   const newDotActive = dots[toIndex];
+
+   dotActive.classList.remove("carousel_dot__active");
+   newDotActive.classList.add("carousel_dot__active");
+}
+
+let onSlide = false;
+
+window.addEventListener("load", () => {
+   autoSlide();
+
+   const dots = document.querySelectorAll(".carousel_dot");
+   for (let i = 0; i < dots.length; i++) {
+      dots[i].addEventListener("click", () => slide(i));
+   }
+
+   const buttonPrev = document.querySelector(".carousel_button__prev");
+   const buttonNext = document.querySelector(".carousel_button__next");
+   buttonPrev.addEventListener("click", () => slide(getItemActiveIndex() - 1));
+   buttonNext.addEventListener("click", () => slide(getItemActiveIndex() + 1));
+})
+
+function autoSlide() {
+   setInterval(() => {
+      slide(getItemActiveIndex() + 1);
+   }, 3000); // slide speed = 3s
+}
+
+function slide(toIndex) {
+   if (onSlide)
+      return;
+   onSlide = true;
+
+   const itemsArray = Array.from(document.querySelectorAll(".carousel_item"));
+   const itemActive = document.querySelector(".carousel_item__active");
+   const itemActiveIndex = itemsArray.indexOf(itemActive);
+   let newItemActive = null;
+
+   if (toIndex > itemActiveIndex) {
+      // check if toIndex exceeds the number of carousel items
+      if (toIndex >= itemsArray.length) {
+         toIndex = 0;
+      }
+
+      newItemActive = itemsArray[toIndex];
+
+      // start transition
+      newItemActive.classList.add("carousel_item__pos_next");
+      setTimeout(() => {
+         newItemActive.classList.add("carousel_item__next");
+         itemActive.classList.add("carousel_item__next");
+      }, 20);
+   } else {
+      // check if toIndex exceeds the number of carousel items
+      if (toIndex < 0) {
+         toIndex = itemsArray.length - 1;
+      }
+
+      newItemActive = itemsArray[toIndex];
+
+      // start transition
+      newItemActive.classList.add("carousel_item__pos_prev");
+      setTimeout(() => {
+         newItemActive.classList.add("carousel_item__prev");
+         itemActive.classList.add("carousel_item__prev");
+      }, 20);
+   }
+
+   // remove all transition class and switch active class
+   newItemActive.addEventListener("transitionend", () => {
+      itemActive.className = "carousel_item";
+      newItemActive.className = "carousel_item carousel_item__active";
+      onSlide = false;
+   }, {
+      once: true
+   });
+
+   slideIndicator(toIndex);
+}
+
+    </script>
+  </body>
+</html>

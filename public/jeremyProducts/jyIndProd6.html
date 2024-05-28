@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="../swiper-bundle.min.css" />
+  <script src="https://unpkg.com/js-image-zoom@0.7.0/js-image-zoom.js" type="application/javascript"></script>
+  <link rel="stylesheet" href="../styles.css" />
+  <title>ARTificial - Poenitentiae Cruciatus</title>
+  <link rel="icon" type="image/png" href="../images/ARTificial Logo.png">
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="../main.html" class="nav__logo"><img class="logo" src="../images/ARTificial Logo No BG.png"
+          alt="ARTificial Logo"></a>
+      <a href="../main.html" class="nav__logo">ARTificial</a>
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="../main.html" class="nav__link">Home</a>
+          </li>
+          <div class="dropdown">
+            <button class="dropbtn">
+              Products
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="../jeremyProducts/jyProducts.html">JEREMY</a>
+              <a href="../sungjunProducts/sjProducts.html">SJ</a>
+              <a href="../andyProducts/aaProducts.html">ANDY</a>
+            </div>
+          </div>
+          <li class="nav__item">
+            <a href="../aboutUs.html" class="nav__link">About Us</a>
+          </li>
+          <li class="nav__item">
+            <a href="../contactUs.html" class="nav__link">Contact Us</a>
+          </li>
+          <li class="nav__item">
+            <a href="../mainKorean.html" class="nav__link">한국어</a>
+          </li>
+          <li class="nav__item">
+            <i class="fa fa-shopping-cart" id="cart-icon" data-quantity="0"></i>
+            <div class="cart-slide">
+              <h2 class="cart-title">Your Cart</h2>
+              <div class="cart-content"></div>
+              <div class="cart-total">
+                <div class="total-title">Total</div>
+                <div class="total-price">$0</div>
+              </div>
+              <button type="button" class="btn-buy">Pay Now</button>
+              <i class="fa fa-close" id="close-cart"></i>
+            </div>
+          </li>
+        </ul>
+        <!-- Close button -->
+        <div class="nav__close" id="nav-close">
+          <i class="ri-close-line"></i>
+        </div>
+      </div>
+      <div class="nav__actions">
+        <!-- Login button -->
+        <i class="ri-user-line nav__login" id="login-btn"></i>
+        <!-- Toggle button -->
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="ri-menu-line"></i>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- LOGIN -->
+  <div class="login" id="login">
+    <form action="" class="login__form">
+      <h2 class="login__title">Log In</h2>
+      <div class="login__group">
+        <div>
+          <label for="email" class="login__label">Username</label>
+          <input type="email" placeholder="Username or Email" id="email" class="login__input" />
+        </div>
+        <div>
+          <label for="password" class="login__label">Password</label>
+          <input type="password" placeholder="Enter your password" id="password" class="login__input" />
+        </div>
+      </div>
+      <div>
+        <p class="login__signup">
+          Don't have an account? <a href="#">Sign up</a>
+        </p>
+        <a href="#" class="login__forgot"> Forgot your password? </a>
+        <button type="submit" class="login__button">Log In</button>
+      </div>
+    </form>
+    <i class="ri-close-line login__close" id="login-close"></i>
+  </div>
+  <!--  LOGIN  -->
+  <div class="login" id="login">
+    <form action="" class="login__form">
+      <h2 class="login__title">Log In</h2>
+
+      <div class="login__group">
+        <div>
+          <label for="email" class="login__label">Username</label>
+          <input type="email" placeholder="Username or Email" id="email" class="login__input" />
+        </div>
+
+        <div>
+          <label for="password" class="login__label">Password</label>
+          <input type="password" placeholder="Enter your password" id="password" class="login__input" />
+        </div>
+      </div>
+
+      <div>
+        <p class="login__signup">
+          Don't have an account? <a href="#">Sign up</a>
+        </p>
+
+        <a href="#" class="login__forgot"> Forgot your password? </a>
+
+        <button type="submit" class="login__button">Log In</button>
+      </div>
+    </form>
+
+    <i class="ri-close-line login__close" id="login-close"></i>
+  </div>
+  <!-- MAIN -->
+  <!-- CHANGE TITLE IN HEAD/CHANGE H3/PRODUCT TITLE/SUB-TITLE/DESCRIPTION/PRICE/IMAGE/FOOTER LINKS -->
+  <main class="indprod_main">
+    <div class="left">
+      <div class="product-img">
+        <img
+          src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYFUtSQ9KWUbh_f2Jtt95Y8GazIhIiWrY-Idn_jo7xXbvwR2SijmsRFBMr7ThVqae5fEkkSdOOSViGvztSaJON7l9nytcxJdPGCQ5gCyeloVvbWurWwstS7_WI7NIQMZe8znuokfrUC2SC7lEEDxeXozLDuPkLMZ4wtP2J-MiKwIPmQwZImvZ7Q7J4hqL-/s1024/jyproduct6.jpg"
+          alt="product image" id="product-preview">
+      </div>
+    </div>
+    <div class="right">
+      <h3>2022 Collection</h3>
+      <h1 class="product-title">Poenitentiae Cruciatus</h1>
+      <h3>"The Torment of Remorse"</h3>
+      <p>This painting is a richly detailed and emotive portrait that appears to depict the face of a man with an
+        intense, brooding expression. The painting has a dramatic chiaroscuro effect, with deep shadows contrasting
+        against areas highlighted in warm, almost glowing hues.
+        The subject's facial features are rendered with remarkable realism - the furrowed brow, piercing eyes with
+        glimpses of highlighted reflection, slightly parted lips, and curled locks of reddish-brown hair all convey a
+        powerful sense of human presence and inner turmoil.
+      </p>
+      <div class="price-description">
+        <h2 class="price">$33.00</h2>
+      </div>
+      <div class="cart-function">
+        <button type="button" class="add-btn buy-now">Buy Now</button>
+        <button class="add-btn" id="add-to-cart-btn">Add to Cart</button>
+      </div>
+    </div>
+  </main>
+  <!-- FOOTER -->
+  <div class="footer-basic">
+    <footer>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/jeremy_min_yang/"><i class="fa fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/jeremy-yang-3a0a0a299/"><i class="fa fa-linkedin"></i></a>
+        <a href="https://github.com/Jeremy-Min-Yang"><i class="fa fa-github"></i></a>
+      </div>
+      <ul class="footer-list">
+        <li class="list-item"><a href="../main.html">Home</a></li>
+        <li class="list-item"><a href="../aboutUs.html">About Us</a></li>
+        <li class="list-item"><a href="../contactUs.html">Contact Us</a></li>
+        <li class="list-item"><a href="../privacy.html">Privacy Policy</a></li>
+        <li class="list-item"><a href="../t&c.html">Terms & Conditions</a></li>
+      </ul>
+      <p class="copyright">ARTificial [Created by 안지원, 임성준, 양정민] © 2024</p>
+    </footer>
+  </div>
+  <!-- JAVASCRIPT -->
+  <script src="../script.js"></script>
+  <script src="../cart.js"></script>
+  <script src="../../server.js"></script>
+  <script>
+    var options1 = {
+      zoomWidth: 500,
+      zoomHeight: 500,
+      offset: { vertical: 0, horizontal: 10 },
+      scale: 0.6
+    };
+    new ImageZoom(document.querySelector(".product-img"), options1);
+  </script>
+</body>
+
+</html>

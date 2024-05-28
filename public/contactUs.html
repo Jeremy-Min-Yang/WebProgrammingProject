@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>ARTificial - Art Redefined</title>
+  <link rel="icon" type="image/png" href="images/ARTificial Logo.png">
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="main.html" class="nav__logo"><img class="logo" src="images/ARTificial Logo No BG.png" alt="ARTificial Logo"></a>
+      <a href="main.html" class="nav__logo">ARTificial</a>
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="main.html" class="nav__link">Home</a>
+          </li>
+          <div class="dropdown">
+            <button class="dropbtn">
+              Products
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="/site/jeremyProducts/jyProducts.html">JEREMY</a>
+              <a href="sjProducts.html">SJ</a>
+              <a href="aaProducts.html">ANDY</a>
+            </div>
+          </div>
+          <li class="nav__item">
+            <a href="aboutUs.html" class="nav__link">About Us</a>
+          </li>
+          <li class="nav__item">
+            <a href="contactUs.html" class="nav__link">Contact Us</a>
+          </li>
+          <li class="nav__item">
+            <a href="mainKorean.html" class="nav__link">한국어</a>
+          </li>
+          <li class="nav__item">
+            <i class="fa fa-shopping-cart" id="cart-icon" data-quantity="0"></i>
+            <div class="cart-slide">
+              <h2 class="cart-title">Your Cart</h2>
+              <div class="cart-content"></div>
+              <div class="cart-total">
+                <div class="total-title">Total</div>
+                <div class="total-price">$0</div>
+              </div>
+              <button type="button" class="btn-buy">Pay Now</button>
+              <i class="fa fa-close" id="close-cart"></i>
+            </div>
+          </li>
+        </ul>
+        <!-- Close button -->
+        <div class="nav__close" id="nav-close">
+          <i class="ri-close-line"></i>
+        </div>
+      </div>
+      <div class="nav__actions">
+        <!-- Login button -->
+        <i class="ri-user-line nav__login" id="login-btn"></i>
+        <!-- Toggle button -->
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="ri-menu-line"></i>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- LOGIN -->
+  <div class="login" id="login">
+    <form action="" class="login__form">
+      <h2 class="login__title">Log In</h2>
+      <div class="login__group">
+        <div>
+          <label for="email" class="login__label">Username</label>
+          <input type="email" placeholder="Username or Email" id="email" class="login__input" />
+        </div>
+        <div>
+          <label for="password" class="login__label">Password</label>
+          <input type="password" placeholder="Enter your password" id="password" class="login__input" />
+        </div>
+      </div>
+      <div>
+        <p class="login__signup">
+          Don't have an account? <a href="#">Sign up</a>
+        </p>
+        <a href="#" class="login__forgot"> Forgot your password? </a>
+        <button type="submit" class="login__button">Log In</button>
+      </div>
+    </form>
+    <i class="ri-close-line login__close" id="login-close"></i>
+  </div>
+
+  <!-- START OF CONTACT FORM -->
+  <section class="contact1 fontColor" >
+
+    <div class="content1">
+        <h2> Contact Us </h2>
+        <p id="contactus"> We'd love to hear from you! <br> Whether you have questions, feedback, or just want to talk about art, feel free to reach out. </p>
+    </div>
+
+    <!-- CONTAINER -->
+
+    <div class="container1">
+
+        <div class="contactInfo"> 
+
+            <div class="box">
+                <div class="icon1"> <i class="fa fa-map-marker" aria-hidden="true"></i> </div>
+                <div class="text1">
+                    <h3> Address </h3>
+                    <p> 50 Yonsei-ro, <br> Seodaemun-gu, Seoul </p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="icon1"> <i class="fa fa-phone" aria-hidden="true"></i> </div>
+                <div class="text1">
+                    <h3> Phone </h3>
+                    <p> +82 (010) 8290-1235 </p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="icon1"> <i class="fa fa-envelope-o" aria-hidden="true"></i> </div>
+                <div class="text1">
+                    <h3 id="email"> Email </h3>
+                    <!-- Need to change this email -->
+                    <p> mary_poppins@gmail.com </p> 
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- This is where the sending happens -->
+        <div class="contactForm"> 
+
+            <form target="_blank" action="https://formsubmit.co/6aa68d3a7278747678cbc27f776c8805" method="POST">
+
+                <h2 id="sendmsg"> Send Message </h2>
+
+                <br>
+
+                <!-- Name -->
+                <div class="inputBox">
+                    <input type="text" name="name" id="namecontact" required>
+                    <span> Full Name </span>
+                </div>
+                
+                <br>
+
+                <!-- Email -->
+                <div class="inputBox">
+                    <input type="email" name="email" id="emailcontact" required>
+                    <span> Email </span>
+                </div>
+
+                <br>
+
+                <!-- Message -->
+                <div class="inputBox">
+                    <textarea id='message' name='message' rows='4' required></textarea>
+                    <span> Type Your Message </span>
+                </div>
+
+                <br>
+
+                <!-- Submit button -->
+                <div class="inputBox">
+                    <input type="submit" name="submit" value="Send">
+                    <!-- <button type="submit" class="inputBox"> Send </button> -->
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+    
+</section>
+
+<!-- JAVASCRIPT -->
+<script src="swiper-bundle.min.js"></script>
+<script src="script.js"></script>
+
+<script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+    (function(){
+        emailjs.init({
+            publicKey: "cwdPhW8Lp3I8xumqH",
+        });
+    })();
+</script>
+
+</body>
+<div class="footer-basic">
+    <footer>
+      <div class="footer-social">
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="../public/contactUs.html"><i class="fa fa-envelope"></i></a>
+        <a href="#"><i class="fa fa-github"></i></a>
+      </div>
+      <ul class="footer-list">
+        <li class="list-item"><a href="main.html">Home</a></li>
+        <li class="list-item"><a href="aboutUs.html">About Us</a></li>
+        <li class="list-item"><a href="contactUs.html">Contact Us</a></li>
+        <li class="list-item"><a href="privacy.html">Privacy Policy</a></li>
+        <li class="list-item"><a href="t&c.html">Terms & Conditions</a></li>
+      </ul>
+      <p class="copyright">ARTificial [Created by 안지원, 임성준, 양정민] © 2024</p>
+    </footer>
+  </div>
+</html>
