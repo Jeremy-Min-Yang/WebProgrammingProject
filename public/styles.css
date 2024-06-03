@@ -1837,3 +1837,64 @@ img {
 {
   font-size: 20px;
 }
+
+
+/* SJ product Page*/
+
+.sjadd-btn {
+  width: 100%;
+  background: rgb(28, 28, 255);
+  margin: 30px 0;
+  padding: 15px;
+  border-radius: 10px;
+  color: #fff;
+  outline: none;
+  border: none;
+  font-weight: var(--font-semi-bold);
+}
+
+.sjadd-btn:hover {
+  background: rgba(28, 28, 255, .3);
+  cursor: pointer;
+}
+
+.sjright h3 {
+  color: rgb(28, 28, 255);
+  margin-bottom: 15px;
+}
+
+.sjright h1 {
+  font-size: 50px;
+  font-weight: bolder;
+  margin: 20px 0;
+}
+
+.sjright p {
+  letter-spacing: 0.7px;
+  line-height: 1.7em;
+  margin: 10px 0 20px;
+  color: hsl(219, 9%, 45%);
+}
+
+.sjright .sjprice-description {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.sjright .sjprice-description h2 {
+  margin-right: 10px;
+}
+
+.sjright .sjprice-description h4 {
+  background: rgba(28, 28, 255, .2);
+  color: rgb(28, 28, 255);
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-right: 40px;
+
+}
+
+.sjright .price-description h5 {
+  color: hsl(220, 14%, 75%);
+}
