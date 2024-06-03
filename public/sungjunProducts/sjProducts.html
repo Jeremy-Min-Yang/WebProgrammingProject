@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="../swiper-bundle.min.css" />
+  <link rel="stylesheet" href="../styles.css">
+  <title>ARTificial - Art Redefined</title>
+  <link rel="icon" type="image/png" href="../images/ARTificial Logo.png">
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="main.html" class="nav__logo"><img class="logo" src="../images/ARTificial Logo No BG.png" alt=""></a>
+      <a href="main.html" class="nav__logo">ARTificial</a>
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="main.html" class="nav__link">Home</a>
+          </li>
+          <div class="dropdown">
+            <button class="dropbtn">
+              Products
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="/site/jeremyProducts/jyProducts.html">JEREMY</a>
+              <a href="sjProducts.html">SJ</a>
+              <a href="aaProducts.html">ANDY</a>
+            </div>
+          </div>
+          <li class="nav__item">
+            <a href="aboutUs.html" class="nav__link">About Us</a>
+          </li>
+
+          <li class="nav__item">
+            <a href="contactUs.html" class="nav__link">Contact Us</a>
+          </li>
+
+          <li class="nav__item">
+            <a href="mainKorean.html" class="nav__link">한국어</a>
+          </li>
+
+          <li class="nav__item">
+            <i class="fa fa-shopping-cart" id="cart-icon" data-quantity="0"></i>
+            <div class="cart-slide">
+              <h2 class="cart-title">Your Cart</h2>
+              <div class="cart-content">
+                <div class="cart-box">
+                  <img src="../images/jyPics/jyproduct1.jpg" alt="" class="cart-img">
+                  <div class="detail-box">
+                    <div class="cart-product-title">Image</div>
+                    <div class="cart-price">$14,000</div>
+                  </div>
+                  <i class="fa fa-trash cart-remove"></i>
+                </div>
+              </div>
+              <div class="cart-total">
+                <div class="total-title">Total</div>
+                <div class="total-price">$0</div>
+              </div>
+              <button type="button" class="btn-buy">Pay Now</button>
+              <i class="fa fa-close" id="close-cart"></i>
+            </div>
+          </li>
+        </ul>
+
+        <!-- Close button -->
+        <div class="nav__close" id="nav-close">
+          <i class="ri-close-line"></i>
+        </div>
+      </div>
+
+      <div class="nav__actions">
+        <!-- Login button -->
+        <i class="ri-user-line nav__login" id="login-btn"></i>
+
+        <!-- Toggle button -->
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="ri-menu-line"></i>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!--  LOGIN  -->
+  <div class="login" id="login">
+    <form action="" class="login__form">
+      <h2 class="login__title">Log In</h2>
+
+      <div class="login__group">
+        <div>
+          <label for="email" class="login__label">Username</label>
+          <input type="email" placeholder="Username or Email" id="email" class="login__input" />
+        </div>
+
+        <div>
+          <label for="password" class="login__label">Password</label>
+          <input type="password" placeholder="Enter your password" id="password" class="login__input" />
+        </div>
+      </div>
+
+      <div>
+        <p class="login__signup">
+          Don't have an account? <a href="#">Sign up</a>
+        </p>
+
+        <a href="#" class="login__forgot"> Forgot your password? </a>
+
+        <button type="submit" class="login__button">Log In</button>
+      </div>
+    </form>
+
+    <i class="ri-close-line login__close" id="login-close"></i>
+  </div>
+  <!-- SHOP -->
+  <section class="shop" id="shop">
+    <div class="product_header">
+      <div class="testimonials-header">
+        <h1>Abstract Art based Images</h1>
+        <p>Created by Sung Jun Lim in collaboration with Co-Pilot.</p>
+      </div>
+      <div class="shop_container">
+        <div class="shop_box">
+          <a href="sjProducts1.html">
+            <!-- Stipe Payment system needs images to be online or won't work/Used blogger to upload images and copied link -->
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjwQmCwpvmapcM56oWY8Qxo7JcE9Vw5W8VnLTRB8x-C_GsOKMiENIq0P3rlAvJsy8FLwP4USJx-mwiOpI3Wef6-lKLpBslYULaULaLTvV3WMJxaw-rL-pZvWONkuOHSbZJcXTrjtW1XZe9j5i9xbtDkO5Auv_-yI6M4bDFssUejsoay56nDBvdP5REJnBo0/w1684-h1069-p-k-no-nu/Products1.jpg" alt="" />
+            <h4>Abstract Painting</h4>
+            <h5>$14,000.00</h5>
+            <div class="cart">
+              <a href=""><i class="fa fa-shopping-cart"></i></a>
+            </div>
+          </a>
+        </div>
+        <div class="shop_box">
+          <a href="sjProducts2.html">
+            <img src="
+            https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiCgeRGFbJYjZ8Cm8EGg-lmZsz-D-PXS6ar_LgF89iFt7olCic7xWtOmRWyKmODk7-agKPVxGaPZ9eco86js0ZgiHHy1RArFXBp7J2hw8UJP96B7lhQSoBN-pdwcS9nePZ6N7ymFduOThLYMFyb38mYfCl0ZISI8-m2d5Esr66lQQgAppl9D1tOj29943gm/w640-h640/Products2.jpg" alt="" />
+            <h4>Abstract Painting 2</h4>
+            <h5><strike>$14,000.00</strike> SALE</h5>
+            <div class="cart">
+              <a href=""><i class="fa fa-shopping-cart"></i></a>
+            </div>
+          </a>
+        </div>
+
+        <div class="shop_box">
+          <a href="sjProducts3.html">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiloxNsNlR3OCVNv6r9BXocr1o_VNwDQL84m5l3fG6ESl8Y9AGATgjw8vJS2mDakplSSTg3cU4KVeSAuQUvglqSeb4uR7zFij13ZXaF9vYzd3RcTYfapFoV1F_9r-gQxPTYf7Ia3jDHxJiCAdLnf2qdmoBs5crNkuxqy9Go7Opn93zk6zLw2JzC9GykEygZ/w640-h640/Products3.jpg" alt="" />
+            <h4>Abstract Painting 3</h4>
+            <h5><strike>$14,000.00</strike> SALE</h5>
+            <div class="cart">
+              <a href=""><i class="fa fa-shopping-cart"></i></a>
+            </div>
+          </a>
+        </div>
+
+        <div class="shop_box">
+          <a href="sjProducts4.html">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiyMx_yokkR4pIsLtD5OHQmj3-5T17IdENH8XHqmq3nzWYAS1NyDP96-adH5iowWhBLQ7FJCcd9QdcabUTb7zUIILBjbJPGK24ATz_6wGVQGwbpx_W7yeU0VbjZUNL5fjRK_1b8e7AS0zWLAzvobbKWjom_My1To-FfnpQHxv5IBnXW4VdmUX3KV_IlevHC/w640-h640/Products4.jpg" alt="" />
+            <h4>Abstract Painting 4</h4>
+            <h5><strike>$14,000.00</strike> SALE</h5>
+            <div class="cart">
+              <a href=""><i class="fa fa-shopping-cart"></i></a>
+            </div>
+          </a>
+        </div>
+
+        <div class="shop_box">
+          <a href="sjProducts5.html">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjF7dyJunhrqJ_dDRa5jeAIksRObdkTknwbBcA8WUGEmBbtQni4NWAECGa8SD8o-5r7GYMcEpPp8R9-yi2yLNyD_WaRiftX-qiFiXjovjWSi3lN91Rx4FeHaLFRciD9kHtwcDseoMuokiezoN-sSEwBctCiRGe0YcpgOnoE0xy9OSzphyphenhyphenZXZAjlU3kZ62Ia/w640-h640/Products5.jpg" alt="" />
+            <h4>3D Abstract</h4>
+            <h5><strike>$14,000.00</strike> SALE</h5>
+            <div class="cart">
+              <a href=""><i class="fa fa-shopping-cart"></i></a>
+            </div>
+          </a>
+        </div>
+
+        <div class="shop_box">
+          <a href="sjProducts6.html">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEisqYNsFyEaathyFoD1PmWFBzmIJTAEIGE_rrPPM86GSkPFnUgjw8N75vubcSrzVpoPNgM94wKulkAlfxXs8VUq1gG8gUjoNNk35r8Ek2Cwha5wLi7u8LrN5WavSZ93vffyeP-39uaAhHNo0llYZwMhfU3TGMXjHG4kEfUX2JGgQmOqlmYR0U1yfC24wq7p/w640-h640/Products6.jpg" alt="" />
+            <h4>Abstract Background</h4>
+            <h5><strike>$14,000.00</strike> SALE</h5>
+            <div class="cart">
+              <a href=""><i class="fa fa-shopping-cart"></i></a>
+            </div>
+          </a>
+        </div>
+
+        <div class="shop_box">
+          <a href="sjProducts7.html">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmeshBkK8eLo1OENil1iJ1U5CVEmPGexNgIIlBHfZm_DagV35EGqpcQa01tb4oT4PufOrmpRcPg7gvc7WhBDpxq6M1DMqN4IJ5aLpSRRSirzlS4CNLkI06EL9TsizIavECwkOvPicgWiWbHyaUzERSCCb1QgqUGl48NennivCCpdP5NIZkOSg7Cflo7orR/w640-h640/Products7.jpg" alt="" />
+            <h4>Abstract Background 2</h4>
+            <h5><strike>$14,000.00</strike> SALE</h5>
+            <div class="cart">
+              <a href=""><i class="fa fa-shopping-cart"></i></a>
+            </div>
+          </a>
+        </div>
+
+        <div class="shop_box">
+          <a href="sjProducts8.html">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiyHmc6J3OGArcI-xmXQZ40rThQ8K0WxlPWHFnNYzgP6BRbAAgCr5FX6rOyZkwHWzWmtrBW5_SQ5zDBDxkg9AJuULhkz0ux2CscizQsoKvlXUD-PS7vX3JL_iANiGNPlhIM_PBWcgbQ6lf5CM5IKegqdYrx0TW6RshJLLQGYXHfSWrXwqK4hWIyrg1rJ1Fs/w640-h640/Products8.jpg" alt="" />
+            <h4>Abstract Background 3</h4>
+            <h5><strike>$14,000.00</strike> SALE</h5>
+            <div class="cart">
+              <a href=""><i class="fa fa-shopping-cart"></i></a>
+            </div>
+        </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Description of theme and product -->
+  <section class="product_about" id="product_about">
+    <div class="about_content">
+      <h2>About</h2>
+      <p>
+        Abstract art is a form of visual art that breaks away from traditional representation, focusing instead on shapes, colors, and forms to create compositions independent of visual references in the world. Unlike realistic art, 
+        which aims to depict objects and scenes as they appear, abstract art emphasizes emotional expression and conceptual ideas. This style often seeks to evoke subjective interpretations and emotional responses 
+        from viewers rather than convey a specific image or narrative.
+        Abstract art emerged in the early 20th century, with pioneers like Wassily Kandinsky, Piet Mondrian, and Kazimir Malevich. These artists explored non-representational forms to express inner experiences 
+        and philosophical concepts. Abstract art can vary widely, including geometric abstraction, which uses precise shapes and lines, and lyrical abstraction, 
+        characterized by fluid, expressive brushstrokes.
+        The goal of abstract art is to provide a visual language that transcends literal interpretation, inviting viewers to engage with the artwork on a deeper, more personal level.
+      </p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <div class="footer-basic">
+    <footer>
+      <div class="footer-social">
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-github"></i></a>
+      </div>
+      <ul class="footer-list">
+        <li class="list-item"><a href="../main.html">Home</a></li>
+        <li class="list-item"><a href="../aboutUs.html">About Us</a></li>
+        <li class="list-item"><a href="../contactUs.html">Contact Us</a></li>
+        <li class="list-item"><a href="../privacy.html">Privacy Policy</a></li>
+        <li class="list-item"><a href="../t&c.html">Terms & Conditions</a></li>
+      </ul>
+      <p class="copyright">
+        ARTificial [Created by 안지원, 임성준, 양정민] © 2024
+      </p>
+    </footer>
+  </div>
+  <script src="../script.js"></script>
+  <script src="../swiper-bundle.min.js"></script>
+</body>
+
+</html>
