@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="../swiper-bundle.min.css" />
+  <link rel="stylesheet" href="../styles.css" />
+  <title>ARTificial - Art Redefined</title>
+  <link rel="icon" type="image/png" href="../images/ARTificial Logo.png">
+  <script src="https://unpkg.com/js-image-zoom@0.7.0/js-image-zoom.js" type="application/javascript"></script>
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="../main.html" class="nav__logo"><img class="logo" src="../images/ARTificial Logo No BG.png" alt=""></a>
+      <a href="../main.html" class="nav__logo">ARTificial</a>
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="../main.html" class="nav__link">Home</a>
+          </li>
+          <div class="dropdown">
+            <button class="dropbtn">
+              Products
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="jyProducts.html">JEREMY</a>
+              <a href="../sjProducts.html">SJ</a>
+              <a href="../aaProducts.html">ANDY</a>
+            </div>
+          </div>
+          <li class="nav__item">
+            <a href="../aboutUs.html" class="nav__link">About Us</a>
+          </li>
+
+          <li class="nav__item">
+            <a href="../contactUs.html" class="nav__link">Contact Us</a>
+          </li>
+
+          <li class="nav__item">
+            <a href="../mainKorean.html" class="nav__link">한국어</a>
+          </li>
+
+          <li class="nav__item">
+            <a href="../shoppingcart.html" class="nav__link"><i class="fa fa-shopping-cart"></i>
+            </a>
+          </li>
+        </ul>
+
+        <!-- Close button -->
+        <div class="nav__close" id="nav-close">
+          <i class="ri-close-line"></i>
+        </div>
+      </div>
+
+      <div class="nav__actions">
+        <!-- Login button -->
+        <i class="ri-user-line nav__login" id="login-btn"></i>
+
+        <!-- Toggle button -->
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="ri-menu-line"></i>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!--  LOGIN  -->
+  <div class="login" id="login">
+    <form action="" class="login__form">
+      <h2 class="login__title">Log In</h2>
+
+      <div class="login__group">
+        <div>
+          <label for="email" class="login__label">Username</label>
+          <input type="email" placeholder="Username or Email" id="email" class="login__input" />
+        </div>
+
+        <div>
+          <label for="password" class="login__label">Password</label>
+          <input type="password" placeholder="Enter your password" id="password" class="login__input" />
+        </div>
+      </div>
+
+      <div>
+        <p class="login__signup">
+          Don't have an account? <a href="#">Sign up</a>
+        </p>
+
+        <a href="#" class="login__forgot"> Forgot your password? </a>
+
+        <button type="submit" class="login__button">Log In</button>
+      </div>
+    </form>
+
+    <i class="ri-close-line login__close" id="login-close"></i>
+  </div>
+  <!-- MAIN -->
+  <main class="indprod_main">
+    <div class="left">
+      <div class="product-img">
+        <img src="../images/sjPics/Products5.jpg" alt="product image" id="product-preview">
+      </div>
+    </div>
+    <div class="sjright">
+      <h3>2024 Collection</h3>
+      <h1>3D Abstract</h1>
+      <h3>Gravity</h3>
+      <p>This image is a drawing of an abstract painting seen from a person point of view in a museum. Abstract art often does not attempt to represent physical reality. 
+        A 3D representation of abstract art. By using 3 dimensional shapes it gives off the feeling of shapes defying the laws of physics.
+      </p>
+      <div class="sjprice-description">
+        <h2>$0</h2>
+        <h4>100%</h4>
+        <h5><strike>$14,000</strike></h5>
+      </div>
+      <div class="cart-function">
+        <button class="sjadd-btn"><img src="" alt="">Buy Now</button>
+        <button class="sjadd-btn" id="add-to-cart-btn">Add to Cart</button>
+      </div>
+    </div>
+  </main>
+
+  </section>
+  <!-- FOOTER -->
+  <div class="footer-basic">
+    <footer>
+      <div class="footer-social">
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-github"></i></a>
+      </div>
+      <ul class="footer-list">
+        <li class="list-item"><a href="../main.html">Home</a></li>
+        <li class="list-item"><a href="../aboutUs.html">About Us</a></li>
+        <li class="list-item"><a href="../contactUs.html">Contact Us</a></li>
+        <li class="list-item"><a href="../privacy.html">Privacy Policy</a></li>
+        <li class="list-item"><a href="../t&c.html">Terms & Conditions</a></li>
+      </ul>
+      <p class="copyright">ARTificial [Created by 안지원, 임성준, 양정민] © 2024</p>
+    </footer>
+  </div>
+  <!-- JAVASCRIPT -->
+  <script src="../swiper-bundle.min.js"></script>
+  <script src="../script.js"></script>
+</body>
+
+</html>
