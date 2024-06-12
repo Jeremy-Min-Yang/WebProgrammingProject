@@ -1222,7 +1222,7 @@ img {
 }
 
 .banner {
-  background-image: url('../public/images/crystalbanner.jpg');
+  background-image: url('../images/crystalbanner.jpg');
   background-size: cover;
   height: 400px;
   position: relative;
