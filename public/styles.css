@@ -562,7 +562,6 @@ img {
   margin: 0 auto;
   margin-top: 50px;
   padding: 20px;
-  background-color: #EBEBEB;
 }
 
 .carousel {
@@ -974,7 +973,7 @@ img {
   top: 0;
   height: 100%;
   width: 100%;
-  background-color: #4070F4;
+  background-color: #99D3DF;
   border-radius: 25px 25px 0 25px;
 }
 
@@ -986,7 +985,7 @@ img {
   bottom: -40px;
   height: 40px;
   width: 40px;
-  background-color: #4070F4;
+  background-color: #99D3DF;
 }
 
 .overlay::after {
@@ -1008,7 +1007,7 @@ img {
   width: 100%;
   object-fit: cover;
   border-radius: 50%;
-  border: 4px solid #4070F4;
+  border: 4px solid #99D3DF;
 }
 
 .name {
@@ -1030,7 +1029,7 @@ img {
   font-size: 16px;
   color: #FFF;
   padding: 8px 16px;
-  background-color: #4070F4;
+  background-color: #99D3DF;
   border-radius: 6px;
   margin: 14px;
   margin-top: 40px;
@@ -1043,12 +1042,12 @@ img {
 }
 
 .swiper-navBtn {
-  color: #6E93f7;
+  color: #99D3DF;
   transition: color 0.3s ease;
 }
 
 .swiper-navBtn:hover {
-  color: #4070F4;
+  color: #99D3DF;
 }
 
 .swiper-navBtn::before,
@@ -1065,12 +1064,12 @@ img {
 }
 
 .swiper-pagination-bullet {
-  background-color: #6E93f7;
+  background-color: #99D3DF;
   opacity: 1;
 }
 
 .swiper-pagination-bullet-active {
-  background-color: #4070F4;
+  background-color: #99D3DF;
 }
 
 @media screen and (max-width: 768px) {
