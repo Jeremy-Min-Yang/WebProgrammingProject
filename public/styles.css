@@ -1245,15 +1245,14 @@ img {
   display: flex;
   align-items: center;
   color: white;
-  margin-bottom: 10px; /* Add margin-bottom to create space below the banner */
+  margin-bottom: 10px;
 }
 
 .box {
-  background-image: url("../WebProgrammingProject/images/Yonseilogo.png");
   background-size:cover;
-  width: 100px; /* Adjust the width of the box as needed */
-  height: 100px; /* Adjust the height of the box as needed */
-  margin-right: 20px; /* Adjust the margin as needed */
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
 }
 
 .abouttext {
@@ -1305,15 +1304,14 @@ img {
 }
 
 .about_image{
-  width: 400px;
-  height: 450px;
+  width: 434px;
+  height: 480px;
   margin: 0 8px 0 8px;
-  padding: 20px;
+  padding-top: 12px;
 }
 
 .aboutuscard {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  margin: 8px;
 }
 
 .aboutuscontainer::after, .row::after {
@@ -1322,7 +1320,7 @@ img {
   display: table;
 }
 
-.button {
+.aboutus_button {
   border: none;
   outline: 0;
   display: inline-block;
@@ -1331,8 +1329,16 @@ img {
   background-color: #000;
   text-align: center;
   cursor: pointer;
-  width: 80%;
+  width: 30%;
   margin-top: 10px;
+  margin-bottom: 12px;
+  border-radius: 4px;
+
+}
+
+.about_email{
+  margin-top: 8px;
+  margin-bottom: 12px;
 }
 
 .button:hover {
@@ -1347,6 +1353,7 @@ img {
 .adressheader {
   padding-bottom: 500px;
 }
+
 #map-container {
   width: 100%;
   padding-bottom: 100px;
@@ -1399,29 +1406,35 @@ img {
   font-size: 36px;
 }
 
+.title{
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
 /*Modal
 
 /* The Modal (background) */
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  display: none;
+  position: fixed;
+  z-index: 1;
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
   padding-top: 30px;
 }
 
 .modal-content {
   display: flex;
   background-color: #fefefe;
-  margin: 5% auto; /* 15% from the top and centered */
+  margin: 5% auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
+  width: 50%;
+  height: 80%;
 }
 
 .modalimgcontainer {
@@ -1433,11 +1446,11 @@ img {
 }
 
 .modalimgcontainer img {
-  max-width: 100%;
+  max-width: 50%;
   height: auto;
 }
 
-.container {
+.modaltext_container {
   flex: 1;
   padding: 20px;
   padding-top: 30px;
@@ -1665,7 +1678,7 @@ img {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: url(../public/images/bg.jpg);
+  background: url(../images/bg.jpg);
   background-size: cover;
 }
 
@@ -1688,6 +1701,10 @@ img {
 {
   font-weight: 300; 
   color: #fff;
+}
+
+.contact-p{
+  width: 400px;
 }
 
 .container1
@@ -1836,4 +1853,189 @@ img {
 #contactus
 {
   font-size: 20px;
+}
+
+.logincontainer{
+  width:450px;
+  padding:1.5rem;
+  margin:50px auto;
+  border-radius:10px;
+  box-shadow:0 20px 35px rgba(0,0,1,0.9);
+  background:#fff;
+}
+form{
+  margin:0 2rem;
+}
+
+.registerform-title{
+  font-size:1.5rem;
+  font-weight:bold;
+  text-align:center;
+  padding:1.3rem;
+  margin-bottom: 5px;
+}
+input{
+  color:inherit;
+  width:100%;
+  background-color:transparent;
+  border:none;
+  border-bottom:1px solid #757575;
+  padding-left:1.5rem;
+  font-size:15px;
+}
+.input-group{
+  padding:1% 0;
+  position:relative;
+
+}
+.input-group i{
+  position:absolute;
+  color:black;
+}
+input:focus{
+  background-color: transparent;
+  outline:transparent;
+  border-bottom:2px solid hsl(327,90%,28%);
+}
+input::placeholder{
+  color:transparent;
+}
+label{
+  color:#757575;
+  position:relative;
+  left:1.2em;
+  top:-1.3em;
+  cursor:auto;
+  transition:0.3s ease all;
+}
+input:focus~label,input:not(:placeholder-shown)~label{
+  top:-3em;
+  color:hsl(327,90%,28%);
+  font-size:15px;
+}
+.recover{
+  text-align:right;
+  font-size:1rem;
+  margin-bottom:1rem;
+
+}
+.recover a{
+  text-decoration:none;
+  color:rgb(125,125,235);
+}
+.recover a:hover{
+  color:blue;
+  text-decoration:underline;
+}
+.registerbtn{
+  font-size:1.1rem;
+  padding:8px 0;
+  border-radius:5px;
+  outline:none;
+  border:none;
+  width:100%;
+  background:rgb(125,125,235);
+  color:white;
+  cursor:pointer;
+  transition:0.9s;
+}
+.registerbtn:hover{
+  background:rgb(95, 95, 180);
+}
+.links{
+  display:flex;
+  justify-content:space-around;
+  padding:0 4rem;
+  margin-top:0.9rem;
+  font-weight:bold;
+}
+#signUpButton{
+  color:rgb(125,125,235);
+  border:none;
+  background-color:transparent;
+  font-size:1rem;
+  font-weight:bold;
+}
+
+#signUpButton :hover{
+  color: rgb(95, 95, 180);
+}
+#signInButton{
+  color:rgb(125,125,235);
+  border:none;
+  background-color:transparent;
+  font-size:1rem;
+  font-weight:bold;
+}
+
+#signInButton :hover{
+  color: rgb(95, 95, 180);
+}
+
+/* Profile Page */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.Profilepage-container {
+  display: flex;
+  height: 100vh;
+}
+
+.Profilepage-sidebar {
+  width: 200px;
+  background-color: #333;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.Profilepage-profile-pic {
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Profilepage-profile-pic img {
+  width: 100%;
+  height: auto;
+}
+
+.Profilepage-sidebar .Profilepage-button,
+.Profilepage-sidebar .Profilepage-link {
+  width: 100%;
+  margin: 5px 0;
+  padding: 10px;
+  background-color: #444;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  display: block;
+}
+
+.Profilepage-sidebar .Profilepage-button:hover,
+.Profilepage-sidebar .Profilepage-link:hover {
+  background-color: #555;
+}
+
+.Profilepage-sidebar .Profilepage-button:focus,
+.Profilepage-sidebar .Profilepage-link:focus {
+  outline: none;
+}
+
+.Profilepage-content {
+  flex: 1;
+  padding: 20px;
+  background-color: #f4f4f4;
 }

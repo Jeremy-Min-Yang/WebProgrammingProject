@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="../styles.css" />
+  <title>ARTificial - Andy Products</title>
+  <link rel="icon" type="image/png" href="../images/ARTificial Logo.png">
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="main.html" class="nav__logo"><img class="logo" src="../images/ARTificial Logo No BG.png" alt="ARTificial Logo"></a>
+      <a href="main.html" class="nav__logo">ARTificial</a>
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="main.html" class="nav__link">Home</a>
+          </li>
+          <div class="dropdown">
+            <button class="dropbtn">
+              Products
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="/site/jeremyProducts/jyProducts.html">JEREMY</a>
+              <a href="sjProducts.html">SJ</a>
+              <a href="/site/aaproducts/aaProducts.html">ANDY</a>
+            </div>
+          </div>
+          <li class="nav__item">
+            <a href="aboutUs.html" class="nav__link">About Us</a>
+          </li>
+          <li class="nav__item">
+            <a href="contactUs.html" class="nav__link">Contact Us</a>
+          </li>
+          <li class="nav__item">
+            <a href="mainKorean.html" class="nav__link">한국어</a>
+          </li>
+          <li class="nav__item">
+            <i class="fa fa-shopping-cart" id="cart-icon" data-quantity="0"></i>
+            <div class="cart-slide">
+              <h2 class="cart-title">Your Cart</h2>
+              <div class="cart-content"></div>
+              <div class="cart-total">
+                <div class="total-title">Total</div>
+                <div class="total-price">$0</div>
+              </div>
+              <button type="button" class="btn-buy">Pay Now</button>
+              <i class="fa fa-close" id="close-cart"></i>
+            </div>
+          </li>
+        </ul>
+        <!-- Close button -->
+        <div class="nav__close" id="nav-close">
+          <i class="ri-close-line"></i>
+        </div>
+      </div>
+      <div class="nav__actions">
+        <!-- Login button -->
+        <i class="ri-user-line nav__login" id="login-btn"></i>
+        <!-- Toggle button -->
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="ri-menu-line"></i>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- LOGIN -->
+  <div class="login" id="login">
+    <form action="" class="login__form">
+      <h2 class="login__title">Log In</h2>
+      <div class="login__group">
+        <div>
+          <label for="email" class="login__label">Username</label>
+          <input type="email" placeholder="Username or Email" id="email" class="login__input" />
+        </div>
+        <div>
+          <label for="password" class="login__label">Password</label>
+          <input type="password" placeholder="Enter your password" id="password" class="login__input" />
+        </div>
+      </div>
+      <div>
+        <p class="login__signup">
+          Don't have an account? <a href="#">Sign up</a>
+        </p>
+        <a href="#" class="login__forgot"> Forgot your password? </a>
+        <button type="submit" class="login__button">Log In</button>
+      </div>
+    </form>
+    <i class="ri-close-line login__close" id="login-close"></i>
+  </div>
+  <!-- SHOP -->
+  <section class="shop" id="shop">
+    <div class="product_header">
+      <div class="testimonials-header">
+        <h1>Cosmic Surrealism</h1>
+
+        <!-- Description of theme and product -->
+        <section class="product_about" id="product_about">
+          <div class="about_content">
+            <p>
+            Cosmic Surrealism combines elements of outer space with surrealistic art, creating a blend of dreamy, otherworldly visuals. This theme incorporates cosmic elements like stars, galaxies, and planets with surrealistic features such as floating objects, distorted figures, and imaginative landscapes. It aims to evoke a sense of wonder and exploration, appealing to those fascinated by the mysteries of the universe and the depths of imagination.
+            </p>
+          </div>
+        </section>
+
+      </div>
+      <div class="shop_container">
+
+
+        <div class="shop_box">
+          <a href="../aaproducts/aaProd1.html">
+            <img src="https://blogger.googleusercontent.com/img/a/AVvXsEg4n4rK7MZhQSkeAmRL7UQXqYCm-BVHFFqPhvOs7h73XooQLGivZD8LXzuvNBLDQHYgxYONUeALl6fI-_7-6zGOphFjMftWsMFt7Z15hXqTACQdp2j1B2azyV1glbox_tZfmQpjrlIpxrxWmFQATlmRB-OphJBOYgz1JZGNyeHGFPyoaMvgK4yBjuwAuMwv" 
+            alt="Semper In Iras Hominum Image" class="product-img"/>
+            <h4 class="product-title">Somnia Caelestia</h4>
+            <h5 class="price">$155.50</h5>
+          </a>
+          <div class="cart">
+            <i class="fa fa-shopping-cart add-cart"></i>
+          </div>
+        </div>
+
+
+        <div class="shop_box">
+          <a href="aaProd2.html">
+            <img src="https://blogger.googleusercontent.com/img/a/AVvXsEgshIyX6EHXpXdYtgLCmwMLdVvPgJH9n1u_rnwUkgs4LEIv1gLHNVlOvHdHU4_XxL3A9NcEqyxIf6aT6vpUqARrRaIGYGvl4cY5Y3wyBAywLBDvB-HXp7t6aasa0OTfOKXvyn0fqrKZ4E8OJ4wuHG0J0VCJdlN_iJ1kYm4CDo8_uVwSBc31E5I6Z97BXxRW" alt="Crepusculum Deorum Image" class="product-img"/>
+            <h4 class="product-title">Susurri Velum Caelestis</h4>
+            <h5 class="price">$144.40</h5>
+          </a>
+          <div class="cart">
+            <i class="fa fa-shopping-cart add-cart"></i>
+          </div>
+        </div>
+
+        <div class="shop_box">
+          <a href="aaProd3.html">
+            <img src="https://blogger.googleusercontent.com/img/a/AVvXsEhidL_PXpOU8oqJ4bSP2lp0K9gaJA0FWrmYMhQ0Xp-UTuhHm1MhwHcF7BOXTfDVlSpQhH7F_mKw-MqtJ91aUukVNwWrUMVpZkO9hEX1jG7IaAm7VNqoQxYhDpzb-BPLz-XrFnE0nFXBPy0U4CQL1_iI1sP0D611Ro3TJYJ7OQ8MJw9M63NN4aygwDKZkpTv" alt="Irae Serpentis Caelestis Image" class="product-img" />
+            <h4 class="product-title">Aurora Ignis</h4>
+            <h5 class="price">$133.30</h5>
+          </a>
+          <div class="cart">
+            <i class="fa fa-shopping-cart add-cart"></i>
+          </div>
+        </div>
+        
+        <div class="shop_box">
+          <a href="aaProd4.html">
+            <img src="https://blogger.googleusercontent.com/img/a/AVvXsEjug-vkvYKbfrnhdtfmb5Rce0FsJ90qBEv5_HRPsqoShMUhxCot755uhKr1CaKyX8w9rg0vq7TgWG-Jviz0BJoDXB517K2qxMPIyiIBNH6gw1nowm8B9-EVhYQY2-aAq_d4RcOexj7woX9A-yOs0IWdrDfuWc4LEu0Q-wDBaXN6-bO2mYEYEcKGgJ0zQl8x" alt="Ultima Scientiarum Image"  class="product-img"/>
+            <h4 class="product-title">Stellar Reverie</h4>
+            <h5 class="price">$122.20</h5>
+          </a>
+          <div class="cart">
+            <i class="fa fa-shopping-cart add-cart"></i>
+          </div>
+        </div>
+
+        <div class="shop_box">
+          <a href="aaProd5.html">
+            <img src="https://blogger.googleusercontent.com/img/a/AVvXsEj_X3W_DYRcsPZhOBQQggLC5b_uhBStwGXPTbzaX8xrUgETmfywzg37jBIdtnn3Vp1DrXiZ4NI-1syxlHKsk8ghK1ZofJ7HlSQLf4RC3E9FXVSpY4ZCXWpgGEwDceaHWRpVb2IEaCqSxLW2ZX71OuRLYHIAfWPjUjLhqg0C_zAJ-5Eop0KNL1B6WzAKr7AO" alt="Symphonia Annihilationis Image" class="product-img" />
+            <h4 class="product-title">Ad Astra</h4>
+            <h5 class="price">$111.10</h5>
+          </a>
+          <div class="cart">
+            <i class="fa fa-shopping-cart add-cart"></i>
+          </div>
+        </div>
+
+        <div class="shop_box">
+          <a href="aaProd6.html">
+            <img src="https://blogger.googleusercontent.com/img/a/AVvXsEjBoEvAKxalh0_fhKdVRH2uD76AFcbHdVdFtvG20nu2OZ2ynbY7CMu2zALAi6YSX593s9BNqr0Kocrdfw6Ai7rtA-19DB8cWM8eIy5LoJLA3Tpt-RFvCTf4vAtD_Y1SHh3uaRboJkjH3MkiBpQnC9bjcR5EdBh1qlGCtgT2x_Vgy7UVbS-3G_72D-HrPHwu" alt="Poenitentiae Cruciatus Image" class="product-img" />
+            <h4 class="product-title">Pandora</h4>
+            <h5 class="price">$99.99</h5>
+          </a>
+          <div class="cart">
+            <i class="fa fa-shopping-cart add-cart"></i>
+          </div>
+        </div>
+
+        <div class="shop_box">
+          <a href="aaProd7.html">
+            <img src="https://blogger.googleusercontent.com/img/a/AVvXsEjmcgAVpXhAgY0Gt3J7MH9ylEXXcO8O0e5fSjWa8QXIGylXKIVBLP9Sc3ll4OJNX4fxMIcKxiBKmTC3g7IgSI4Mt6ZCH1Ry26LvH3VXZDatjTxOJXImk5O_dJ4UfHnKARsFJG-enGcC3iva4p7n1Bn1Rljuhzw-BgK1ObiOtoLv5MOBluFo82_0y5Sevg7p" alt="Tristitia Solitudinis Image"  class="product-img"/>
+            <h4 class="product-title">Reverie Nebulae</h4>
+            <h5 class="price">$88.80</h5>
+          </a>
+          <div class="cart">
+            <i class="fa fa-shopping-cart add-cart"></i>
+          </div>
+        </div>
+
+        <div class="shop_box">
+          <a href="aaProd8.html">
+            <img src="https://blogger.googleusercontent.com/img/a/AVvXsEhbVgwsFXL8H-Iw3XIY9H7QCh3DZ9zGNYVV40hDqUWeIHOoww1GnVpn3fth37GHMj0k2Yq5rNjxi0kdtAIPkO4GVZuntNHHWxfIYmRypFry4aFufzY3b0uiClYwnEI6yvU3ByVa2lspncYIeixb_BnVhVgj09EIaEzH61kMQwpweFdVq1x77OpAdomUTsC6" alt="Magnitudo Aeterna Creationis Humanae Image"  class="product-img"/>
+            <h4 class="product-title">Via Lactea</h4>
+            <h5 class="price">$100000000.00</h5>
+          </a>
+          <div class="cart">
+            <i class="fa fa-shopping-cart add-cart"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <div class="footer-basic">
+    <footer>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/_andyahn/"><i class="fa fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/andyjiwonahn/"><i class="fa fa-linkedin"></i></a>
+        <a href="https://github.com/Ais3l"><i class="fa fa-github"></i></a>
+      </div>
+      <ul class="footer-list">
+        <li class="list-item"><a href="../main.html">Home</a></li>
+        <li class="list-item"><a href="../aboutUs.html">About Us</a></li>
+        <li class="list-item"><a href="../contactUs.html">Contact Us</a></li>
+        <li class="list-item"><a href="../privacy.html">Privacy Policy</a></li>
+        <li class="list-item"><a href="../t&c.html">Terms & Conditions</a></li>
+      </ul>
+      <p class="copyright">
+        ARTificial [Created by 안지원, 임성준, 양정민] © 2024
+      </p>
+    </footer>
+  </div>
+  <script src="../script.js"></script>
+  <script src="../cart.js"></script>
+  <script src="../../server.js"></script>
+</body>
+
+</html>

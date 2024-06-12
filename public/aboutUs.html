@@ -7,7 +7,6 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" />
    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" />
    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-   <link rel="stylesheet" href="swiper-bundle.min.css" />
    <link rel="stylesheet" href="styles.css" />
    <title>ARTificial - Art Redefined</title>
    <link rel="icon" type="image/png" href="/images/ARTificial Logo.png">
@@ -18,95 +17,87 @@
    <!-- HEADER -->
    <header class="header" id="header">
       <nav class="nav container">
-         <a href="main.html" class="nav__logo"><img class="logo" src="images/ARTificial Logo No BG.png" alt=""></a>
-         <a href="main.html" class="nav__logo">ARTificial</a>
-
-         <!-- Navigation menu -->
-         <div class="nav__menu" id="nav-menu">
-            <ul class="nav__list">
-
-               <!-- Home -->
-               <li class="nav__item">
-                  <a href="main.html" class="nav__link">Home</a>
-               </li>
-
-               <!-- Products -->
-               <div class="dropdown">
-                  <button class="dropbtn">
-                     Products
-                     <i class="fa fa-caret-down"></i>
-                  </button>
-                  <div class="dropdown-content">
-                     <a href="./jeremyProducts/jyProducts.html">JEREMY</a>
-                     <a href="sjProducts.html">SJ</a>
-                     <a href="aaProducts.html">ANDY</a>
-                  </div>
-               </div>
-
-               <!-- About us -->
-               <li class="nav__item">
-                  <a href="aboutUs.html" class="nav__link">About Us</a>
-               </li>
-
-               <!-- Contact us -->
-               <li class="nav__item">
-                  <a href="contactUs.html" class="nav__link">Contact Us</a>
-               </li>
-
-               <!-- Korean Website -->
-               <li class="nav__item">
-                  <a href="mainKorean.html" class="nav__link">한국어</a>
-               </li>
-               <li class="nav__item">
-                  <a href="shoppingcart.html" class="nav__link"><i class="fa fa-shopping-cart"></i>
-                  </a>
-               </li>
-            </ul>
-            <!-- Close button -->
-            <div class="nav__close" id="nav-close">
-               <i class="ri-close-line"></i>
+        <a href="main.html" class="nav__logo"><img class="logo" src="images/ARTificial Logo No BG.png" alt="ARTificial Logo"></a>
+        <a href="main.html" class="nav__logo">ARTificial</a>
+  
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="main.html" class="nav__link">Home</a>
+            </li>
+            <div class="dropdown">
+              <button class="dropbtn">
+                Products
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="/site/jeremyProducts/jyProducts.html">JEREMY</a>
+                <a href="sjProducts.html">SJ</a>
+                <a href="aaProducts.html">ANDY</a>
+              </div>
             </div>
-         </div>
-         <div class="nav__actions">
-            <!-- Login button -->
-            <i class="ri-user-line nav__login" id="login-btn"></i>
-            <!-- Toggle button -->
-            <div class="nav__toggle" id="nav-toggle">
-               <i class="ri-menu-line"></i>
-            </div>
-         </div>
+            <li class="nav__item">
+              <a href="aboutUs.html" class="nav__link">About Us</a>
+            </li>
+            <li class="nav__item">
+              <a href="contactUs.html" class="nav__link">Contact Us</a>
+            </li>
+            <li class="nav__item">
+              <a href="mainKorean.html" class="nav__link">한국어</a>
+            </li>
+            <li class="nav__item">
+              <i class="fa fa-shopping-cart" id="cart-icon" data-quantity="0"></i>
+              <div class="cart-slide">
+                <h2 class="cart-title">Your Cart</h2>
+                <div class="cart-content"></div>
+                <div class="cart-total">
+                  <div class="total-title">Total</div>
+                  <div class="total-price">$0</div>
+                </div>
+                <button type="button" class="btn-buy">Pay Now</button>
+                <i class="fa fa-close" id="close-cart"></i>
+              </div>
+            </li>
+          </ul>
+          <!-- Close button -->
+          <div class="nav__close" id="nav-close">
+            <i class="ri-close-line"></i>
+          </div>
+        </div>
+        <div class="nav__actions">
+          <!-- Login button -->
+          <i class="ri-user-line nav__login" id="login-btn"></i>
+          <!-- Toggle button -->
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-line"></i>
+          </div>
+        </div>
       </nav>
-   </header>
-   <!--  LOGIN  -->
-   <div class="login" id="login">
+    </header>
+    <!-- LOGIN -->
+    <div class="login" id="login">
       <form action="" class="login__form">
-         <h2 class="login__title">Log In</h2>
-
-         <div class="login__group">
-            <div>
-               <label for="email" class="login__label">Username</label>
-               <input type="email" placeholder="Username or Email" id="email" class="login__input" />
-            </div>
-
-            <div>
-               <label for="password" class="login__label">Password</label>
-               <input type="password" placeholder="Enter your password" id="password" class="login__input" />
-            </div>
-         </div>
-
-         <div>
-            <p class="login__signup">
-               Don't have an account? <a href="#">Sign up</a>
-            </p>
-
-            <a href="#" class="login__forgot"> Forgot your password? </a>
-
-            <button type="submit" class="login__button">Log In</button>
-         </div>
+        <h2 class="login__title">Log In</h2>
+        <div class="login__group">
+          <div>
+            <label for="email" class="login__label">Username</label>
+            <input type="email" placeholder="Username or Email" id="email" class="login__input" />
+          </div>
+          <div>
+            <label for="password" class="login__label">Password</label>
+            <input type="password" placeholder="Enter your password" id="password" class="login__input" />
+          </div>
+        </div>
+        <div>
+          <p class="login__signup">
+            Don't have an account? <a href="#">Sign up</a>
+          </p>
+          <a href="#" class="login__forgot"> Forgot your password? </a>
+          <button type="submit" class="login__button">Log In</button>
+        </div>
       </form>
-
       <i class="ri-close-line login__close" id="login-close"></i>
-   </div>
+    </div>
    <!-- About us-->
    <div class="aboutcontainer">
       <div class="banner">
@@ -139,11 +130,11 @@
             <img class="about_image" src="../public/images/devPics/aa.jpg">
             <div class="aboutuscontainer">
                <h2>안지원</h2>
-               <p class="title">Text</p>
+               <p class="title">Co-Founder/Developer</p>
                <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-               <p>mike@example.com</p>
+               <p class="about_email">mike@example.com</p>
                <div class="button-container">
-                  <button class="button"
+                  <button class="aboutus_button"
                      onclick="document.getElementById('id01').style.display='block'">Contact</button>
                </div>
             </div>
@@ -154,11 +145,11 @@
             <img class="about_image" src="../public/images/devPics/jy.jpg">
             <div class="aboutuscontainer">
                <h2>양정민</h2>
-               <p class="title">Text</p>
-               <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-               <p>mike@example.com</p>
+               <p class="title">Co-Founder/Developer</p>
+               <p>"Mayonnaise colored benz, I push miracle whips" - Ye</p>
+               <p class="about_email">jeong.yang31@gmail.com</p>
                <div class="button-container">
-                  <button class="button"
+                  <button class="aboutus_button"
                      onclick="document.getElementById('id02').style.display='block'">Contact</button>
                </div>
             </div>
@@ -170,11 +161,11 @@
             <img class="about_image" src="../public/images/devPics/sj.jpg">
             <div class="aboutuscontainer">
                <h2>임성준</h2>
-               <p class="title">Text</p>
+               <p class="title">Co-Founder/Developer</p>
                <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-               <p>mike@example.com</p>
+               <p class="about_email">mike@example.com</p>
                <div class="button-container">
-                  <button class="button"
+                  <button class="aboutus_button"
                      onclick="document.getElementById('id03').style.display='block'">Contact</button>
                </div>
             </div>
@@ -237,9 +228,9 @@
       <!-- Modal Content -->
       <form class="modal-content animate" action="/action_page.php">
          <div class="modalimgcontainer">
-            <img src="../WebProgrammingProject/images/Yonseilogo.png">
+            <img src="images/devPics/aa.jpg">
          </div>
-         <div class="container">
+         <div class="modaltext_container">
             <h1>About 안지원</h1>
             <p>3rd Year at Yonsei University</p>
             <div class="modalcircularimage">
@@ -268,21 +259,20 @@
          <div class="modalimgcontainer">
             <img src="../public/images/devPics/jy.jpg">
          </div>
-         <div class="container">
-            <h1>About 양정민</h1>
-            <p>3rd Year at Yonsei University</p>
+         <div class="modaltext_container">
+            <p>@ Yonsei University</p>
             <div class="modalcircularimage">
                <div class="modalcircularimagetextcontainer">
                   <a href="#"><i class="fa fa-instagram" style="font-size: 50px; color: gray;"></i></a>
-                  <p class="modalcircularimagetextcontainer-text">test</p>
+                  <p class="modalcircularimagetextcontainer-text">jeremy.min.yang</p>
                </div>
                <div class="modalcircularimagetextcontainer">
                   <a href="#"><i class="fa fa-envelope" style="font-size: 40px; color: gray;"></i></a>
-                  <p class="modalcircularimagetextcontainer-text">test</p>
+                  <p class="modalcircularimagetextcontainer-text">jeong.yang31@gmail.com</p>
                </div>
                <div class="modalcircularimagetextcontainer">
                   <a href="#"><i class="fa fa-phone" style="font-size: 50px; color: gray;"></i></a>
-                  <p class="modalcircularimagetextcontainer-text">010-0000-0000</p>
+                  <p class="modalcircularimagetextcontainer-text">010-1111-1111</p>
                </div>
             </div>
          </div>
@@ -295,9 +285,9 @@
       <!-- Modal Content -->
       <form class="modal-content animate" action="/action_page.php">
          <div class="modalimgcontainer">
-            <img src="../WebProgrammingProject/images/Yonseilogo.png">
+            <img src="images/devPics/sj.jpg">
          </div>
-         <div class="container">
+         <div class="modaltext_container">
             <h1>About 임성준</h1>
             <p>2nd Year at Yonsei University</p>
             <div class="modalcircularimage">

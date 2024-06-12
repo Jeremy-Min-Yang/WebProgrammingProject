@@ -2,6 +2,13 @@ import express from 'express';
 import dotenv from 'dotenv';
 import Stripe from 'stripe';
 import cors from 'cors';
+import path from 'path';
+import mysql from "mysql";
+import pagesRouter from './routes/pages.js';
+import authRouter from './routes/auth.js';
+import authController from './controllers/auth.js';
+
+dotenv.config({ path: './.env'});
 
 dotenv.config();
 
@@ -20,7 +27,7 @@ app.use(cors(corsOptions));
 
 // Middleware for Content Security Policy
 app.use((req, res, next) => {
-    res.setHeader('Content-Security-Policy', "default-src 'self'; script-src 'self' 'unsafe-inline' https://js.stripe.com  https://unpkg.com/js-image-zoom@0.7.0/js-image-zoom.js; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://use.fontawesome.com https://stackpath.bootstrapcdn.com https://fonts.googleapis.com  https://unpkg.com/js-image-zoom@0.7.0/js-image-zoom.js; font-src 'self' https://cdnjs.cloudflare.com https://use.fontawesome.com https://fonts.gstatic.com https://stackpath.bootstrapcdn.com data:; img-src * data:;");
+    res.setHeader('Content-Security-Policy', "default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js https://js.stripe.com  https://unpkg.com/js-image-zoom@0.7.0/js-image-zoom.js; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://use.fontawesome.com https://stackpath.bootstrapcdn.com https://fonts.googleapis.com  https://unpkg.com/js-image-zoom@0.7.0/js-image-zoom.js; font-src 'self' https://cdnjs.cloudflare.com https://use.fontawesome.com https://fonts.gstatic.com https://stackpath.bootstrapcdn.com data https://maps.googleapis.com/maps/api/js?key=AIzaSyAuhJNyw10wCCnWK9C5fY6x_nvKt54I-5Q&callback=initMap https://unpkg.com/js-image-zoom@0.7.0/js-image-zoom.js:; img-src * data:;");
     next();
 });
 
@@ -77,7 +84,43 @@ app.post("/stripe-checkout", async (req, res) => {
     }
 });
 
+//login
+const router = express.Router();
+
+const db = mysql.createConnection({
+    host : process.env.DATABASE_HOST,
+    user: process.env.DATABASE_USER,
+    password: process.env.DATABASE_PASSWORD,
+    database: process.env.DATABASE
+});
+const __dirname = path.dirname(new URL(import.meta.url).pathname);
+app.use(express.static("public"));
+app.use(express.json());
+
+app.use(express.urlencoded({ extended: false})); 
+
+db.connect(  (error) => {
+    if(error) {
+        console.log(error)
+    } else {
+        console.log("MySQL connected...")
+    }
+})
+
+app.use('/', pagesRouter);
+app.use('/auth', authRouter);
+
+router.post('/register', authController.register);
+router.post('/login', authController.login);
+
+app.set('view engine', 'ejs');
+
+
+
 
 app.listen(3000, () => {
     console.log('Server started on port 3000');
 });
+
+
+
