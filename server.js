@@ -27,7 +27,7 @@ app.use(cors(corsOptions));
 
 // Middleware for Content Security Policy
 app.use((req, res, next) => {
-    res.setHeader('Content-Security-Policy', "default-src 'self' https://maps.googleapis.com; script-src 'self' 'unsafe-inline' https://maps.googleapis.com https://maps.gstatic.com https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js https://maps.googleapis.com/maps/api/js?key=AIzaSyAuhJNyw10wCCnWK9C5fY6x_nvKt54I-5Q&callback=initMap https://js.stripe.com  https://unpkg.com/js-image-zoom@0.7.0/js-image-zoom.js; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://use.fontawesome.com https://stackpath.bootstrapcdn.com https://fonts.googleapis.com  https://unpkg.com/js-image-zoom@0.7.0/js-image-zoom.js; font-src 'self' https://cdnjs.cloudflare.com https://use.fontawesome.com https://fonts.gstatic.com https://stackpath.bootstrapcdn.com data https://unpkg.com/js-image-zoom@0.7.0/js-image-zoom.js:; img-src * data:;");
+    res.setHeader('Content-Security-Policy', "default-src 'self' https://maps.googleapis.com; script-src 'self' 'unsafe-inline' https://maps.googleapis.com https://maps.gstatic.com https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js https://maps.googleapis.com/maps/api/js?key=AIzaSyAuhJNyw10wCCnWK9C5fY6x_nvKt54I-5Q&callback=initMap https://js.stripe.com  https://unpkg.com/js-image-zoom@0.7.0/js-image-zoom.js; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://use.fontawesome.com https://stackpath.bootstrapcdn.com https://fonts.googleapis.com  https://unpkg.com/js-image-zoom@0.7.0/js-image-zoom.js; font-src 'self' https://cdnjs.cloudflare.com https://use.fontawesome.com https://fonts.gstatic.com https://stackpath.bootstrapcdn.com data: https://unpkg.com/js-image-zoom@0.7.0/js-image-zoom.js; img-src * data:;");
     next();
 });
 
@@ -36,17 +36,17 @@ app.use(express.json());
 
 // Home Route
 app.get('/', (req, res) => {
-    res.sendFile('jeremyProducts/jyProducts.html', { root: 'public' });
+    res.sendFile('main.html', { root: 'public' });
 });
 
 // Success Route
 app.get('/success', (req, res) => {
-    res.sendFile('public/success.html', { root: 'public' });
+    res.sendFile('success.html', { root: 'public' });
 });
 
 // Cancel Route
 app.get('/cancel', (req, res) => {
-    res.sendFile('public/cancelOrder.html', { root: 'public' });
+    res.sendFile('cancelOrder.html', { root: 'public' });
 });
 
 // Stripe Checkout Route

@@ -32,7 +32,7 @@
             <div class="dropdown-content">
               <a href="../jeremyProducts/jyProducts.html">JEREMY</a>
               <a href="sjProducts.html">SJ</a>
-              <a href="aaProducts.html">ANDY</a>
+              <a href="../andyProducts/aaProducts.html">ANDY</a>
             </div>
           </div>
           <li class="nav__item">
@@ -98,13 +98,13 @@
     <i class="ri-close-line login__close" id="login-close"></i>
   </div>
   <!-- SHOP -->
-  <audio controls autoplay loop src="../audio/space song.mp3"></audio>
   <section class="shop" id="shop">
     <div class="product_header">
       <div class="testimonials-header">
         <h1>Abstract Visualized</h1>
-        <p>Created by Sung Jun Lim in collaboration with Co-Pilot.</p>
+        <p>Created by Sung Jun Lim in collaboration with Co-Pilot. <i style ="cursor: pointer"class="fa fa-music" onclick="playAudio()"></i></p>
       </div>
+      <audio id="backgroundMusic" src="../audio/space song.mp3" loop></audio>
       <div class="shop_container">
 
         <div class="shop_box">
@@ -233,6 +233,12 @@
       </p>
     </footer>
   </div>
+  <script>
+    function playAudio() {
+      var audio = document.getElementById('backgroundMusic');
+      audio.play();
+    }
+  </script>
   <script src="../script.js"></script>
   <script src="../cart.js"></script>
   <script src="../swiper-bundle.min.js"></script>
