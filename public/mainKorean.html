@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>ARTificial - Art Redefined</title>
+    <link rel="icon" type="image/png" href="images/ARTificial Logo.png">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="main.html" class="nav__logo"><img class="logo" src="images/ARTificial Logo No BG.png"
+                    alt="ARTificial Logo"></a>
+            <a href="main.html" class="nav__logo">ARTificial</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="main.html" class="nav__link">홈</a>
+                    </li>
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                            제품
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="jeremyProducts/jyProducts.html">양정민</a>
+                            <a href="sungjunProducts/sjProducts.html">임성준</a>
+                            <a href="andyProducts/aaProducts.html">안지원</a>
+                        </div>
+                    </div>
+                    <li class="nav__item">
+                        <a href="aboutUs.html" class="nav__link">우리 소개</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="contactUs.html" class="nav__link">문의</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="main.html" class="nav__link">English</a>
+                    </li>
+                    <li class="nav__item">
+                        <i class="fa fa-shopping-cart" id="cart-icon" data-quantity="0"></i>
+                        <div class="cart-slide">
+                            <h2 class="cart-title">Your Cart</h2>
+                            <div class="cart-content"></div>
+                            <div class="cart-total">
+                                <div class="total-title">Total</div>
+                                <div class="total-price">$0</div>
+                            </div>
+                            <button type="button" class="btn-buy">Pay Now</button>
+                            <i class="fa fa-close" id="close-cart"></i>
+                        </div>
+                    </li>
+                </ul>
+                <!-- Close button -->
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+            <div class="nav__actions">
+                <!-- Login button -->
+                <a href="../signup.html" class="nav__login">
+                    <i class="ri-user-line nav__login" id="login-btn"></i>
+                </a>
+                <!-- Toggle button -->
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <i class="" id="login-close"></i>
+    <!-- IMAGE CAROUSEL -->
+    <div class="carousel-container">
+        <div class="carousel">
+            <div class="carousel_inner">
+                <div class="carousel_item carousel_item__active">
+                    <img src="./images/jyPics/jyproduct6.jpg" alt="" class="carousel_img" />
+                    <div class="carousel_caption">
+                        <h1 class="carousel_title">Poenitentiae Cruciatus</h1>
+                        <p class="carousel_description">
+                            2022년 콜렉션.
+                        </p>
+                        <button class="carousel_btn"><a href="./jeremyProducts/jyIndProd6.html">View</a></button>
+                    </div>
+                </div>
+                <div class="carousel_item">
+                    <img src="https://blogger.googleusercontent.com/img/a/AVvXsEjmcgAVpXhAgY0Gt3J7MH9ylEXXcO8O0e5fSjWa8QXIGylXKIVBLP9Sc3ll4OJNX4fxMIcKxiBKmTC3g7IgSI4Mt6ZCH1Ry26LvH3VXZDatjTxOJXImk5O_dJ4UfHnKARsFJG-enGcC3iva4p7n1Bn1Rljuhzw-BgK1ObiOtoLv5MOBluFo82_0y5Sevg7p"
+                        alt="" class="carousel_img" />
+                    <div class="carousel_caption">
+                        <h1 class="carousel_title">Reverie Nebulae</h1>
+                        <p class="carousel_description">
+                            안지원의 최신 창작물.
+                        </p>
+                        <button class="carousel_btn"><a href="./andyProducts/aaProd7.html">View</a></button>
+                    </div>
+                </div>
+                <div class="carousel_item">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiyHmc6J3OGArcI-xmXQZ40rThQ8K0WxlPWHFnNYzgP6BRbAAgCr5FX6rOyZkwHWzWmtrBW5_SQ5zDBDxkg9AJuULhkz0ux2CscizQsoKvlXUD-PS7vX3JL_iANiGNPlhIM_PBWcgbQ6lf5CM5IKegqdYrx0TW6RshJLLQGYXHfSWrXwqK4hWIyrg1rJ1Fs/w640-h640/Products8.jpg"
+                        alt="" class="carousel_img" />
+                    <div class="carousel_caption">
+                        <h1 class="carousel_title">Space Chaos</h1>
+                        <p class="carousel_description">
+                            추상예술 투 더 맥스.
+                        </p>
+                        <button class="carousel_btn"><a href="./sungjunProducts/sjProducts8.html">View</a></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel_indicator">
+                <button class="carousel_dot carousel_dot__active"></button>
+                <button class="carousel_dot"></button>
+                <button class="carousel_dot"></button>
+            </div>
+
+            <div class="carousel_control">
+                <button class="carousel_button carousel_button__prev">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="carousel_button carousel_button__next">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Text (Our Vision) -->
+    <div class="vision-container">
+        <h1 class="vision-text">우리의 비젼</h1>
+        <p class="vision-description">
+            예술은 정의상 개인의 생각과 감정을 시각적으로 표현합니다. ARTificial에서는 인공 지능이 단순한 도구 이상이라고 믿습니다. 그들은 우리의 상상력의 경계를 초월하는 협력자입니다. 인공
+            지능은 무한한 관점을 제시할 수 있는 능력이 있습니다. 헤아릴 수 없을 정도로 조화로우면서도 관습에 얽매이지 않는 새로운 신선한 미학을 창조하는 시각적 교향곡입니다. AI는 창의성의 촉매입니다.
+            1과 0에 담근 붓은 신경 경로에 따라 안내됩니다. 함께 예술을 재정의하여 시도되고 테스트된 것으로 알려진 것을 넘어섰습니다.
+        </p>
+    </div>
+
+    <!-- TEXT (Our Team) -->
+    <div class="meetus-container">
+        <div class="meetus-header">
+            <h1>TEAM ONE</h1>
+        </div>
+        <div class="sub-container">
+            <div class="teams">
+                <img src="images/devPics/aa.jpg" alt="" />
+                <div class="name">안지원</div>
+                <div class="desig">공동 창립자/개발자</div>
+                <div class="about">연세 2024</div>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/_andyahn/"><i class="fa fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://github.com/Jeremy-Min-Yang/WebProgrammingProject"><i class="fa fa-github"></i></a>
+                </div>
+            </div>
+            <div class="teams">
+                <img src="images/devPics/jy.jpg" alt="" />
+                <div class="name">양정민</div>
+                <div class="desig">공동 창립자/개발자</div>
+                <div class="about">연세 2024</div>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/jeremy_min_yang/"><i class="fa fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://github.com/Jeremy-Min-Yang/WebProgrammingProject"><i class="fa fa-github"></i></a>
+                </div>
+            </div>
+            <div class="teams">
+                <img src="images/devPics/sj.jpg" alt="" />
+                <div class="name">임성준</div>
+                <div class="desig">공동 창립자/개발자</div>
+                <div class="about">연세 2024</div>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/sungjunlim13/"><i class="fa fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://github.com/Jeremy-Min-Yang/WebProgrammingProject"><i class="fa fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CUSTOMER TESTIMONIALS -->
+    <div class="testimonials_container">
+        <div class="testimonials-header">
+            <h1>고객 추천사</h1>
+        </div>
+        <div class="slide-container swiper">
+            <div class="slide-content">
+                <div class="card-wrapper swiper-wrapper">
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="images/customerPics/chaewon.jpg" alt="" class="card-img" />
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="CTname">김채원</h2>
+                            <p class="description">
+                                <br>
+                                <br>
+                                "Anti-ti-ti-ti fragile, fragile!"
+                            </p>
+
+                            <button class="button" id="kimchaewon-ig">View More</button>
+
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="images/customerPics/neymar.jpg" alt="" class="card-img" />
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="CTname">NEYMAR JR.</h2>
+                            <p class="description">
+                                <br>
+                                <br>
+                                "월드컵만 이기고 싶다..."
+                            </p>
+
+                            <button class="button" id="neymar-ig">View More</button>
+
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="images/customerPics/lebron.png.jpeg" alt="" class="card-img" />
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="CTname">LEBRON JAMES</h2>
+                            <p class="description">
+                                "You are my sunshine <br>
+                                My only sunshine <br>
+                                You make me happy <br>
+                                When skies are gray <br>
+                            </p>
+
+                            <button class="button" id="lebron-ig">View More</button>
+
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="images/customerPics/messi.png" alt="" class="card-img" />
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="CTname">MESSI</h2>
+                            <p class="description">
+                                <br>
+                                <br>
+                                "That's why he's the GOAT"
+                            </p>
+
+                            <button class="button" id="messi-ig">View More</button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="images/customerPics/einstein.jpg" alt="" class="card-img" />
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="CTname">EINSTEIN</h2>
+                            <p class="description">
+                                <br>
+                                <br>
+                                "죽었지많 E=MC^2"
+                            </p>
+
+                            <button class="button" id="einstein-ig">View More</button>
+
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="images/customerPics/drake.jpeg" alt="" class="card-img" />
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="CTname">DRAKE</h2>
+                            <p class="description">
+                                "Say, Drake, I hear you like 'em young <br>
+                                You better not ever go to cell block one <br>
+                                To any bitch that talk to him and they in love <br>
+                                Just make sure you hide your lil' sister from him"
+                            </p>
+
+                            <button class="button" id="drake-ig">View More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-button-next swiper-navBtn"></div>
+            <div class="swiper-button-prev swiper-navBtn"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer-basic">
+        <footer>
+            <div class="footer-social">
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-envelope"></i></a>
+                <a href="#"><i class="fa fa-github"></i></a>
+            </div>
+            <ul class="footer-list">
+                <li class="list-item"><a href="main.html">Home</a></li>
+                <li class="list-item"><a href="aboutUs.html">About Us</a></li>
+                <li class="list-item"><a href="contactUs.html">Contact Us</a></li>
+                <li class="list-item"><a href="privacy.html">Privacy Policy</a></li>
+                <li class="list-item"><a href="t&c.html">Terms & Conditions</a></li>
+            </ul>
+            <p class="copyright">ARTificial [Created by 안지원, 임성준, 양정민] © 2024</p>
+        </footer>
+    </div>
+    <!-- JAVASCRIPT -->
+    <script src="swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var swiper = new Swiper(".slide-content", {
+                slidesPerView: 3,
+                spaceBetween: 25,
+                loop: true,
+                centerSlide: 'true',
+                fade: 'true',
+                grabCursor: 'true',
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                    dynamicBullets: true,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+
+                breakpoints: {
+                    0: {
+                        slidesPerView: 1,
+                    },
+                    520: {
+                        slidesPerView: 2,
+                    },
+                    950: {
+                        slidesPerView: 3,
+                    },
+                },
+            });
+
+            //  Customer testimonials instagram: kim chaewon
+            var kimchaewon_button = document.getElementById("kimchaewon-ig");
+
+            kimchaewon_button.addEventListener("click", function () {
+                console.log("Kim Chaewon");
+                window.location.href = "https://www.instagram.com/_chaechae_1/?hl=en"
+            });
+
+            //  Customer testimonials instagram: neymar jr
+            var neymar_button = document.getElementById("neymar-ig");
+
+            neymar_button.addEventListener("click", function () {
+                console.log("Neymar");
+                window.location.href = "https://www.instagram.com/neymarjr/?hl=en"
+            });
+
+            //  Customer testimonials instagram: lebron
+            var lebron_button = document.getElementById("lebron-ig");
+
+            lebron_button.addEventListener("click", function () {
+                console.log("lebron");
+                window.location.href = "https://www.instagram.com/kingjames/?hl=en"
+            });
+
+            //  Customer testimonials instagram: messi
+            var messi_button = document.getElementById("messi-ig");
+
+            messi_button.addEventListener("click", function () {
+                console.log("messi");
+                window.location.href = "https://www.instagram.com/leomessi/?hl=en"
+            });
+
+            //  Customer testimonials instagram: einstein
+            var einstein_button = document.getElementById("einstein-ig");
+
+            einstein_button.addEventListener("click", function () {
+                console.log("einstein");
+                window.location.href = "https://www.instagram.com/alberteinstein/?hl=en"
+            });
+
+            //  Customer testimonials instagram: drake
+            var drake_button = document.getElementById("drake-ig");
+
+            drake_button.addEventListener("click", function () {
+                console.log("drake");
+                window.location.href = "https://www.instagram.com/champagnepapi/?hl=en"
+            });
+        });
+
+        function getItemActiveIndex() {
+            const itemsArray = Array.from(document.querySelectorAll(".carousel_item"));
+            const itemActive = document.querySelector(".carousel_item__active");
+            const itemActiveIndex = itemsArray.indexOf(itemActive);
+            return itemActiveIndex;
+        }
+
+        function slideIndicator(toIndex) {
+            const dots = document.querySelectorAll(".carousel_dot");
+            const dotActive = document.querySelector(".carousel_dot__active");
+            const newDotActive = dots[toIndex];
+
+            dotActive.classList.remove("carousel_dot__active");
+            newDotActive.classList.add("carousel_dot__active");
+        }
+
+        let onSlide = false;
+
+        window.addEventListener("load", () => {
+            autoSlide();
+
+            const dots = document.querySelectorAll(".carousel_dot");
+            for (let i = 0; i < dots.length; i++) {
+                dots[i].addEventListener("click", () => slide(i));
+            }
+
+            const buttonPrev = document.querySelector(".carousel_button__prev");
+            const buttonNext = document.querySelector(".carousel_button__next");
+            buttonPrev.addEventListener("click", () => slide(getItemActiveIndex() - 1));
+            buttonNext.addEventListener("click", () => slide(getItemActiveIndex() + 1));
+        })
+
+        function autoSlide() {
+            setInterval(() => {
+                slide(getItemActiveIndex() + 1);
+            }, 3000); // slide speed = 3s
+        }
+
+        function slide(toIndex) {
+            if (onSlide)
+                return;
+            onSlide = true;
+
+            const itemsArray = Array.from(document.querySelectorAll(".carousel_item"));
+            const itemActive = document.querySelector(".carousel_item__active");
+            const itemActiveIndex = itemsArray.indexOf(itemActive);
+            let newItemActive = null;
+
+            if (toIndex > itemActiveIndex) {
+                // check if toIndex exceeds the number of carousel items
+                if (toIndex >= itemsArray.length) {
+                    toIndex = 0;
+                }
+
+                newItemActive = itemsArray[toIndex];
+
+                // start transition
+                newItemActive.classList.add("carousel_item__pos_next");
+                setTimeout(() => {
+                    newItemActive.classList.add("carousel_item__next");
+                    itemActive.classList.add("carousel_item__next");
+                }, 20);
+            } else {
+                // check if toIndex exceeds the number of carousel items
+                if (toIndex < 0) {
+                    toIndex = itemsArray.length - 1;
+                }
+
+                newItemActive = itemsArray[toIndex];
+
+                // start transition
+                newItemActive.classList.add("carousel_item__pos_prev");
+                setTimeout(() => {
+                    newItemActive.classList.add("carousel_item__prev");
+                    itemActive.classList.add("carousel_item__prev");
+                }, 20);
+            }
+
+            // remove all transition class and switch active class
+            newItemActive.addEventListener("transitionend", () => {
+                itemActive.className = "carousel_item";
+                newItemActive.className = "carousel_item carousel_item__active";
+                onSlide = false;
+            }, {
+                once: true
+            });
+
+            slideIndicator(toIndex);
+        }
+
+    </script>
+</body>
+
+</html>

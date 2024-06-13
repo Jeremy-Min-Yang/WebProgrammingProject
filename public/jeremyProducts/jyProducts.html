@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
   <link rel="stylesheet" href="../styles.css" />
-  <title>ARTificial - Art Redefined</title>
+  <title>ARTificial - Jerome Products</title>
   <link rel="icon" type="image/png" href="../images/ARTificial Logo.png">
 </head>
 
@@ -16,93 +16,73 @@
   <!-- HEADER -->
   <header class="header" id="header">
     <nav class="nav container">
-      <a href="../main.html" class="nav__logo"><img class="logo" src="../images/ARTificial Logo No BG.png" alt="ARTificial Logo"></a>
-      <a href="../main.html" class="nav__logo">ARTificial</a>
+        <a href="../main.html" class="nav__logo"><img class="logo" src="../images/ARTificial Logo No BG.png"
+                alt="ARTificial Logo"></a>
+        <a href="../main.html" class="nav__logo">ARTificial</a>
 
-      <div class="nav__menu" id="nav-menu">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a href="../main.html" class="nav__link">Home</a>
-          </li>
-          <div class="dropdown">
-            <button class="dropbtn">
-              Products
-              <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-              <a href="jyProducts.html">JEREMY</a>
-              <a href="../sungjunProducts/sjProducts.html">SJ</a>
-              <a href="../andyProducts/aaProducts.html">ANDY</a>
+        <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="../main.html" class="nav__link">Home</a>
+                </li>
+                <div class="dropdown">
+                    <button class="dropbtn">
+                        Products
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="../jeremyProducts/jyProducts.html">JEREMY</a>
+                        <a href="../sungjunProducts/sjProducts.html">SJ</a>
+                        <a href="../andyProducts/aaProducts.html">ANDY</a>
+                    </div>
+                </div>
+                <li class="nav__item">
+                    <a href="../aboutUs.html" class="nav__link">About Us</a>
+                </li>
+                <li class="nav__item">
+                    <a href="../contactUs.html" class="nav__link">Contact Us</a>
+                </li>
+                <li class="nav__item">
+                    <a href="../mainKorean.html" class="nav__link">한국어</a>
+                </li>
+                <li class="nav__item">
+                    <i class="fa fa-shopping-cart" id="cart-icon" data-quantity="0"></i>
+                    <div class="cart-slide">
+                        <h2 class="cart-title">Your Cart</h2>
+                        <div class="cart-content"></div>
+                        <div class="cart-total">
+                            <div class="total-title">Total</div>
+                            <div class="total-price">$0</div>
+                        </div>
+                        <button type="button" class="btn-buy">Pay Now</button>
+                        <i class="fa fa-close" id="close-cart"></i>
+                    </div>
+                </li>
+            </ul>
+            <!-- Close button -->
+            <div class="nav__close" id="nav-close">
+                <i class="ri-close-line"></i>
             </div>
-          </div>
-          <li class="nav__item">
-            <a href="../aboutUs.html" class="nav__link">About Us</a>
-          </li>
-          <li class="nav__item">
-            <a href="../contactUs.html" class="nav__link">Contact Us</a>
-          </li>
-          <li class="nav__item">
-            <a href="../mainKorean.html" class="nav__link">한국어</a>
-          </li>
-          <li class="nav__item">
-            <i class="fa fa-shopping-cart" id="cart-icon" data-quantity="0"></i>
-            <div class="cart-slide">
-              <h2 class="cart-title">Your Cart</h2>
-              <div class="cart-content"></div>
-              <div class="cart-total">
-                <div class="total-title">Total</div>
-                <div class="total-price">$0</div>
-              </div>
-              <button type="button" class="btn-buy">Pay Now</button>
-              <i class="fa fa-close" id="close-cart"></i>
+        </div>
+        <div class="nav__actions">
+            <!-- Login button -->
+            <a href="../signup.html" class="nav__login">
+            <i class="ri-user-line nav__login" id="login-btn"></i>
+            </a>
+            <!-- Toggle button -->
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-menu-line"></i>
             </div>
-          </li>
-        </ul>
-        <!-- Close button -->
-        <div class="nav__close" id="nav-close">
-          <i class="ri-close-line"></i>
         </div>
-      </div>
-      <div class="nav__actions">
-        <!-- Login button -->
-        <i class="ri-user-line nav__login" id="login-btn"></i>
-        <!-- Toggle button -->
-        <div class="nav__toggle" id="nav-toggle">
-          <i class="ri-menu-line"></i>
-        </div>
-      </div>
     </nav>
-  </header>
-  <!-- LOGIN -->
-  <div class="login" id="login">
-    <form action="" class="login__form">
-      <h2 class="login__title">Log In</h2>
-      <div class="login__group">
-        <div>
-          <label for="email" class="login__label">Username</label>
-          <input type="email" placeholder="Username or Email" id="email" class="login__input" />
-        </div>
-        <div>
-          <label for="password" class="login__label">Password</label>
-          <input type="password" placeholder="Enter your password" id="password" class="login__input" />
-        </div>
-      </div>
-      <div>
-        <p class="login__signup">
-          Don't have an account? <a href="#">Sign up</a>
-        </p>
-        <a href="#" class="login__forgot"> Forgot your password? </a>
-        <button type="submit" class="login__button">Log In</button>
-      </div>
-    </form>
-    <i class="ri-close-line login__close" id="login-close"></i>
-  </div>
+</header>
+    <i class="" id="login-close"></i>
   <!-- SHOP -->
   <section class="shop" id="shop">
     <div class="product_header">
       <div class="testimonials-header">
         <h1>Romanticism Personified</h1>
-        <p>Created by Jeremy Yang in collaboration with Dalle3. <i style ="cursor: pointer"class="fa fa-music" onclick="playAudio()"></i></p>
+        <p>Created by Jeremy Yang in collaboration with Dalle3. (Click on the note!) <i style ="cursor: pointer"class="fa fa-music" onclick="playAudio()"></i></p>
       </div>
         <audio id="backgroundMusic" src="../audio/snowfall.mp3" loop></audio>
       <div class="shop_container">
