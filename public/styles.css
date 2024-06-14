@@ -1341,7 +1341,7 @@ img {
 }
 
 /* For large devices */
-@media screen and (min-width: 1023px) {
+@media screen and (min-width: 1024px) {
   .nav {
     height: calc(var(--header-height) + 2rem);
     column-gap: 3rem;
@@ -1569,10 +1569,6 @@ img {
   margin-bottom: 8px;
 }
 
-@media screen and (max-width: 768px) {
-
-}
-
 @media screen and (max-width: 1024px) {
   .AboutusDescription {
     font-size: 18px;
@@ -1603,7 +1599,7 @@ img {
   }
   
   .about_image{
-    margin-left: 11 0px;
+    margin-left: 110px;
   }
 }
 
@@ -1856,6 +1852,14 @@ img {
 
   .left {
     position: relative;
+  }
+
+  .shop_container{
+    margin-left: -12px;
+  }
+
+  .about_content{
+    padding: 0 32px 0 32px;
   }
 }
 
