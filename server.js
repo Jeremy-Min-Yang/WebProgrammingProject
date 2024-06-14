@@ -93,7 +93,6 @@ const db = mysql.createConnection({
     password: process.env.DATABASE_PASSWORD,
     database: process.env.DATABASE
 });
-const __dirname = path.dirname(new URL(import.meta.url).pathname);
 app.use(express.static("public"));
 app.use(express.json());
 

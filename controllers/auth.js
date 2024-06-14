@@ -13,29 +13,31 @@ const db = mysql.createConnection({
 authController.register = (req, res) => {
     console.log(req.body);
 
-    const {fName, lName, email, password} = req.body;
+    const { fName, lName, email, password } = req.body;
 
-    db.query('SELECT email FROM users WHERE email = ?', [email], async(error, results) => {
-        if(error) {
-            console.log(error)
+    db.query('SELECT email FROM users WHERE email = ?', [email], (error, results) => {
+        if (error) {
+            console.log(error);
+            return res.status(500).send("An error occurred.");
         }
 
-        if(results && results.length > 0) {
-            console.log("Email not found");
+        if (results && results.length > 0) {
+            console.log("Email already in use");
             return res.redirect('/signup.html?message=Email Already in use');
         }
 
-        db.query('INSERT INTO users SET ?', {firstName: fName, lastName: lName, email, password: password}, (error, results) =>{
+        // If email does not exist, insert the new user
+        const newUser = { firstName: fName, lastName: lName, email, password };
+        db.query('INSERT INTO users SET ?', newUser, (error, results) => {
             if (error) {
                 console.log(error);
-            } else {
-                console.log(results);
-                return res.redirect('/main.html');
+                return res.status(500).send("An error occurred.");
             }
-        })
 
+            console.log("User registered successfully");
+            return res.status(200).redirect('../signup.html');
+        });
     });
-
 };
 
 authController.login = (req, res) => {
@@ -64,7 +66,7 @@ authController.login = (req, res) => {
         }
 
         console.log("Login successful");
-        res.status(200).redirect('/main.html');
+        res.status(200).redirect('./main.html');
     });
 };
 
