@@ -66,7 +66,7 @@ authController.login = (req, res) => {
         }
 
         console.log("Login successful");
-        res.status(200).redirect('./main.html');
+        res.status(200).redirect('../main.html');
     });
 };
 
